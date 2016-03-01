@@ -145,7 +145,7 @@ h1 {
 }
 
 header {
-    height: 50px;
+    height: 45px;
     position: fixed;
     top: 0px;
     background-color: #111;
@@ -154,29 +154,27 @@ header {
 }
 
 .trillium-logo-main {
-    width: 120px;
-    padding: 5px;
+    width: 100px;
+    padding: 10px;
 }
 
 ul.main-navigation {
     list-style-type: none;
     display: inline-block;
     float: right;
-    padding-right: 100px;
     margin: 0px;
 }
 
 ul.main-navigation > li > a {
     padding-left: 15px;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.7em;
     letter-spacing: 4px;
     opacity: 0.7
 }
 
 ul.main-navigation > li {
     display: inline-block;
-    padding: 14px 5px;
 }
 
 ul.sub-nav {
@@ -185,8 +183,8 @@ ul.sub-nav {
     list-style-type: none;
     padding-left: 0px;
     background-color: #000;
-    font-size: 0.7em;
-    margin-top: 14px;
+    font-size: 0.6em;
+    margin-top: 12px;
     
 }
 
@@ -223,6 +221,27 @@ div.section-content {
 div.section-content {
     text-align: center;
     width: 100%;
+    z-index: 10;
+    top: 90%;
+}
+
+div.part2 {
+    top: 10%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+div.part2 div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.how-we-work div{
+    background-color: rgba( 30, 30, 30, 0.6);
+    color: #ccc;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .section-1-moon div.section-content {
@@ -230,13 +249,13 @@ div.section-content {
 } 
 
 .space-glass-circle {
-    max-width:40%;
+    max-width:400px;
     right: 20%;
     top:35%;
 }
 
 .b-square-circle {
-    max-width:30%;
+    max-width:400px;
     right: 5%;
     bottom:35%;
 }
@@ -258,14 +277,110 @@ div.section-content {
     position: absolute;
 }
 
+.story {
+    font-family: 'robotolight';
+    padding: 10px;
+    background-color: rgba(30,30,30,0.87);
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: 0.87;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.nav-CTA {
+    padding: 15px;
+    background-color: #3481c5;
+    /*border-radius: 2px;*/
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    margin-left: 10px;
+    
+}
+
+.project-badge {
+    background-color: rgba(255,255,255,0.5);
+    text-align: left;
+    max-width: 250px;
+    padding: 10px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    font-size: 0.7em;
+    position: absolute;
+}
+
+.project-badge h3 {
+    font-family: 'ailerons';
+    letter-spacing: 5px;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.project-badge p {
+    color: #fff;
+    margin: 5px 2px;
+    letter-spacing: 2px;
+}
+
+.space-glass-badge {
+    top: 49%;
+    right: 1%;
+}
+
+.b-squares-badge {
+    top: 62%;
+    right: 1%;
+}
+
+.dropfab-badge {
+    top: 10%;
+    left: 1%;
+}
+
+.ultrascope-badge {
+    top: 88%;
+    right: 1%;
+}
+
+.fuelpod-badge {
+    top: 88%;
+    left: 1%;
+}
+
+.octotalk-badge {
+    top: 25%;
+    right: 20%;
+}
+
+.phi-badge {
+    top: 45%;
+    right: 40%;
+}
+
+.osa-badge {
+    top: 64%;
+    right: 1%;
+}
+
+.mavericks-lab-badge {
+    top: 64%;
+    right: 1%;
+}
 
 
+.starshine {
+    background-image: url('../img/stars.jpg');
+}
 
-
-
-
-
-
+.all-partners {
+    width: 100%;
+    
+}
 
 
 
