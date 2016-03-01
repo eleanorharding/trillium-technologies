@@ -185,7 +185,7 @@ ul.sub-nav {
     background-color: #000;
     font-size: 0.6em;
     margin-top: 12px;
-    
+
 }
 
 ul.main-navigation li:hover ul.sub-nav{
@@ -246,7 +246,7 @@ div.part2 div {
 
 .section-1-moon div.section-content {
     top: 70%;
-} 
+}
 
 .space-glass-circle {
     max-width:400px;
@@ -298,7 +298,7 @@ div.part2 div {
     letter-spacing: 4px;
     opacity: 0.9;
     margin-left: 10px;
-    
+
 }
 
 .project-badge {
@@ -379,10 +379,45 @@ div.part2 div {
 
 .all-partners {
     width: 100%;
-    
+
+}
+
+/*Secondary styles START */
+
+.secondary-container {
+    top:0;
+    left:100%;
+
+    width:1760px;
+    margin-left:20px;
+    padding-right:20px;
+
+}
+
+section.secondary {
+  margin-top:100px;
+  height: 850px; /* Default secondary height, set precise h in spec. class */
+  border:2px solid white;
+  color:white;
+
 }
 
 
+section.secondary-1-moon {
+  height:1450px;
+}
+
+section.secondary-4-horizon {
+  height:200px;
+}
+
+section.secondary-8-shore {
+  height:40px;
+}
+
+section.secondary-10-coast {
+  height:550px;
+}
 
 
 
