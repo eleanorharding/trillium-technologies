@@ -54,14 +54,14 @@
         </header>
 
         <section class="main section-1-moon">
-            <img src="img/section-1-moon.jpg"/>
+            <img class="sectionBG" src="img/section-1-moon.jpg"/>
             <div class="section-content" id="top-section">
-                <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> &nbsp; We're building a future where... </h1>
+                <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> <img src="img/we're-building-a-future-where.png" class="building-a-future" </h1>
             </div>
         </section>
 
         <section class="main section-2-ISS">
-            <img src="img/section-2-ISS.jpg"/>
+            <img src="img/section-2-ISS.jpg" class="sectionBG"/>
             <img src="img/space-glass.png" class="fixed space-glass-circle wow zoomIn" data-wow-duration="1s"/>
 
             <div class="project-badge space-glass-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -69,13 +69,14 @@
                 <p> The first whisky glass engineered and tested in Microgravity </p>
             </div>
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...space tourists can enjoy whisky in Zero-G </h1>
+            <div class="section-content ">
+                <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> 
+                <!-- <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; </h1> -->
             </div>
         </section>
 
         <section class="main section-3-BSQ">
-            <img src="img/section-3-BSQ.jpg"/>
+            <img src="img/section-3-BSQ.jpg" class="sectionBG"/>
             <img src="img/ISS-interior.png" class="fixed b-square-circle wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"/>
 
             <div class="project-badge b-squares-badge wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -83,13 +84,14 @@
                 <p> A modular electronics system enabling customized devices that clip together. </p>
             </div>
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...Where anyone can build and deploy a nanoSatellite in seconds </h1>
+            <div class="section-content bsquarestext">
+                <!-- <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...Where anyone can build and deploy a nanoSatellite in seconds </h1> -->
+                <img src="img/nanosatellite.png" class="nanosatellite wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s"/>
             </div>
         </section>
 
         <section class="main section-4-horizon">
-            <img src="img/section-4-horizon.jpg"/>
+            <img src="img/section-4-horizon.jpg" class="sectionBG"/>
 
             <div class="section-content">
                 <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...A future where science is advanced by citizens ...and the tech for citizen science can be fabricated anywhere</h1>
@@ -97,16 +99,20 @@
         </section>
 
         <section class="main section-5-village">
-            <img src="img/section-5-village.jpg"/>
+            <img src="img/section-5-village.jpg" class="sectionBG"/>
 
             <div class="project-badge dropfab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                 <h3> Dropfab </h3>
                 <p> A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe. </p>
             </div>
 
-            <div class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+            <div class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s" onclick="showUltrascopeOverlay()">
                 <h3> ULTRASCOPE</h3>
                 <p> An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids. </p>
+            </div>
+
+            <div class="overlay offscreen" id="ultrascope-overlay" onclick="showUltrascopeOverlay()">
+                <img src="img/overlays/ultrascope-overlay.jpg" />
             </div>
 
             <div class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -120,7 +126,7 @@
         </section>
 
         <section class="main section-6-shore">
-            <img src="img/section-6-shore.jpg"/>
+            <img src="img/section-6-shore.jpg" class="sectionBG"/>
 
             <div class="section-content">
                 <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...A future where we explore, monitor and protect our oceans.... </h1>
@@ -128,7 +134,7 @@
         </section>
 
         <section class="main section-7-underwater">
-            <img src="img/section-7-underwater.jpg"/>
+            <img src="img/section-7-underwater.jpg" class="sectionBG"/>
             <img src="img/scuba.png" class="fixed scuba-divers"/>
 
             <div class="project-badge octotalk-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -144,7 +150,7 @@
         </section>
 
         <section class="main section-8-coast">
-            <img src="img/section-8-coast.jpg"/>
+            <img src="img/section-8-coast.jpg" class="sectionBG"/>
 
             <div class="project-badge phi-badge wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
                 <h3> PHI </h3>
@@ -158,7 +164,7 @@
         </section>
 
         <section class="main section-9-atmosphere">
-            <img src="img/section-9-atmosphere.jpg"/>
+            <img src="img/section-9-atmosphere.jpg" class="sectionBG"/>
 
             <div class="project-badge osa-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
                 <h3> THE OPEN SPACE AGENCY </h3>
@@ -171,7 +177,7 @@
         </section>
 
         <section class="main stars">
-            <img src="img/stars.jpg"/>
+            <img src="img/stars.jpg" class="sectionBG"/>
             <img src="img/asteroid.png" class="fixed asteroid"/>
 
             <div class="project-badge mavericks-lab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -258,6 +264,13 @@
             })
             .setPin("#top-section") // pins the element for the the scene's duration
             .addTo(controller); // assign the scene to the controller
+    </script>
+
+
+    <script type="text/javascript">
+        function showUltrascopeOverlay() {
+            $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
+        }
     </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

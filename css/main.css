@@ -170,7 +170,8 @@ ul.main-navigation > li > a {
     text-transform: uppercase;
     font-size: 0.7em;
     letter-spacing: 4px;
-    opacity: 0.7
+    opacity: 0.7;
+    padding: 15px;
 }
 
 ul.main-navigation > li {
@@ -192,8 +193,17 @@ ul.main-navigation li:hover ul.sub-nav{
     display: block;
 }
 
-ul.sub-nav li a{
+ul.main-navigation li:hover ul.sub-nav li a {
     padding: 8px 15px;
+}
+
+ul.main-navigation li:hover ul.sub-nav li a {
+    padding: 0px 15px;
+    transition: padding 1s ease;
+}
+
+ul.sub-nav li a{
+    padding: 0px 15px;
     display: block;
 }
 
@@ -205,9 +215,10 @@ ul.sub-nav li:hover a{
     opacity: 1;
 }
 
-section.main img:nth-child(1) {
+section.main img.sectionBG {
     width: 100%;
 }
+
 
 section.main {
     position: relative;
@@ -222,7 +233,11 @@ div.section-content {
     text-align: center;
     width: 100%;
     z-index: 10;
-    top: 90%;
+    top: 70%;
+}
+
+div.section-content.bsquarestext {
+    top: 45%;
 }
 
 div.part2 {
@@ -256,8 +271,8 @@ div.part2 div {
 
 .b-square-circle {
     max-width:400px;
-    right: 5%;
-    bottom:35%;
+    right: 8%;
+    bottom: 33%;
 }
 
 .scuba-divers {
@@ -379,12 +394,35 @@ div.part2 div {
 
 .all-partners {
     width: 100%;
-    
+
+}
+
+.overlay {
+    position: fixed;
+    z-index: 20;
+    top: 45px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.onscreen {
+    left: 0;
 }
 
 
+.building-a-future {
+    width: 350px;
+}
 
+.space-tourists, .nanosatellite {
+    width: 350px;
+}
 
+.overlay > img {
+    width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
