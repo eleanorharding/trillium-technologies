@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -170,7 +171,8 @@ ul.main-navigation > li > a {
     text-transform: uppercase;
     font-size: 0.7em;
     letter-spacing: 4px;
-    opacity: 0.7
+    opacity: 0.7;
+    padding: 15px;
 }
 
 ul.main-navigation > li {
@@ -192,8 +194,17 @@ ul.main-navigation li:hover ul.sub-nav{
     display: block;
 }
 
-ul.sub-nav li a{
+ul.main-navigation li:hover ul.sub-nav li a {
     padding: 8px 15px;
+}
+
+ul.main-navigation li:hover ul.sub-nav li a {
+    padding: 0px 15px;
+    transition: padding 1s ease;
+}
+
+ul.sub-nav li a{
+    padding: 0px 15px;
     display: block;
 }
 
@@ -205,9 +216,10 @@ ul.sub-nav li:hover a{
     opacity: 1;
 }
 
-section.main img:nth-child(1) {
+section.main img.sectionBG {
     width: 100%;
 }
+
 
 section.main {
     position: relative;
@@ -222,7 +234,11 @@ div.section-content {
     text-align: center;
     width: 100%;
     z-index: 10;
-    top: 90%;
+    top: 70%;
+}
+
+div.section-content.bsquarestext {
+    top: 45%;
 }
 
 div.part2 {
@@ -256,8 +272,8 @@ div.part2 div {
 
 .b-square-circle {
     max-width:400px;
-    right: 5%;
-    bottom:35%;
+    right: 8%;
+    bottom: 33%;
 }
 
 .scuba-divers {
@@ -380,6 +396,7 @@ div.part2 div {
 .all-partners {
     width: 100%;
 
+
 }
 
 /*Secondary styles START */
@@ -388,38 +405,102 @@ div.part2 div {
     top:0;
     left:100%;
 
-    width:1760px;
-    margin-left:20px;
-    padding-right:20px;
+    width:1920px;
+    margin-left:0;
+    padding-right:0;
 
 }
 
 section.secondary {
-  margin-top:100px;
-  height: 850px; /* Default secondary height, set precise h in spec. class */
-  border:2px solid white;
+  /*margin-top:100px;*/
+  height: 1000px; /* Default secondary height, set precise h in spec. class */
+  /*border:2px solid white;*/
   color:white;
 
 }
 
 
 section.secondary-1-moon {
-  height:1450px;
+  height:1400px;
 }
 
-section.secondary-4-horizon {
+section#secondary-3-BSQ{
+  background-color: #161827;
+}
+
+section#secondary-4-horizon{
   height:200px;
+  background-color: #242A38;
 }
 
-section.secondary-8-shore {
+section#secondary-5-dropfab{
+  background-color:#344058;
+}
+
+section#secondary-6-ultrascope{
+
+  background:url("../img/overlays/ultrascope-overlay.jpg");
+  background-size:cover;
+  background-color:#7A6468;
+}
+
+section#secondary-7-fuelpod{
+  background-color:#B08C6B;
+}
+
+section#secondary-8-shore{
   height:40px;
+  background-color:#4897C8;
 }
 
-section.secondary-10-coast {
-  height:550px;
+section#secondary-9-octotalk{
+  background-color:#166AAB;
+}
+
+section#secondary-10-coast {
+  height:650px;
+  background-color:#0072A9;
+
+}
+
+section#secondary-11-phi{
+  background-color:#AEB1C0;
+}
+
+section#secondary-12-osa{
+  background-color:#161827;
+}
+
+section#secondary-13-mavericks{
+  background-color:black;
+}
+.overlay {
+    position: fixed;
+    z-index: 20;
+    top: 45px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.onscreen {
+    left: 0;
+
 }
 
 
+.building-a-future {
+    width: 350px;
+}
+
+.space-tourists, .nanosatellite {
+    width: 350px;
+}
+
+.overlay > img {
+    width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
