@@ -194,13 +194,14 @@ ul.main-navigation li:hover ul.sub-nav{
     display: block;
 }
 
-ul.main-navigation li:hover ul.sub-nav li a {
-    padding: 8px 15px;
+ul.main-navigation li ul.sub-nav li a {
+    padding: 0px 15px;
+    -webkit-transition: padding 1s; /* Safari */
+    transition: padding 1s;
 }
 
 ul.main-navigation li:hover ul.sub-nav li a {
-    padding: 0px 15px;
-    transition: padding 1s ease;
+    padding: 8px 15px;
 }
 
 ul.sub-nav li a{
@@ -238,7 +239,18 @@ div.section-content {
 }
 
 div.section-content.bsquarestext {
-    top: 45%;
+    top: 10%;
+}
+
+div.section-content#whisky-in-space {
+    top:35%;
+}
+
+#bsquare {
+    width: 60px;
+    left: 0%;
+    position: absolute;
+    top: 60px;
 }
 
 div.part2 {
@@ -326,6 +338,7 @@ div.part2 div {
     border-right: 3px solid #fff;
     font-size: 0.7em;
     position: absolute;
+    box-shadow: 0px 0px 10px #444;
 }
 
 .project-badge h3 {
