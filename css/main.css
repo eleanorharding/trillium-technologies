@@ -487,6 +487,72 @@ section#secondary-12-osa{
 section#secondary-13-mavericks{
   background-color:black;
 }
+
+.secondary-project-title{
+  position:absolute;
+  background-image: url("../img/dropfab-title.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+
+  width:7%;
+  height:inherit;
+  background-color: #fff;
+  display:inline-block;
+  margin:0;
+  padding:0;
+}
+
+
+
+.secondary-project-desc{
+  position:absolute;
+  left:7%;
+  background-color:#F4F7F9;
+  height:inherit;
+  width:29%;
+  display:inline-block;
+  /*margin:-6px;*/
+  padding:0;
+
+
+  /*z-index:10;*/
+}
+
+.secondary-project-desc h1{
+  font-family: 'robotolight';
+  text-align: left;
+  color:black;
+  margin-left:30px;
+  margin-top:30px;
+  margin-bottom:3px;
+  letter-spacing:-0.5px;
+  font-size:1.3em;
+  font-weight: BOLD;
+
+}
+
+.secondary-project-desc p{
+  font-family: 'robotolight';
+  text-align: left;
+  color:black;
+  margin:0 70px 50px 30px;
+  font-weight: BOLD;
+
+}
+.secondary-project-gallery{
+  position:absolute;
+  left:36%;
+  border-left:50px solid rgba(255,255,255,0.3);
+  background-color:#82BAB6;
+  width:100%;
+  height:inherit;
+  display:inline-block;
+  margin-left:-50px;
+  /*z-index:1;*/
+}
+
+
 .overlay {
     position: fixed;
     z-index: 20;
