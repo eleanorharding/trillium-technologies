@@ -20,8 +20,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-
         <header>
             <img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/>
             <ul class="main-navigation">
@@ -56,7 +54,20 @@
         <section class="main section-1-moon">
             <img class="sectionBG" src="img/section-1-moon.jpg"/>
             <div class="section-content" id="top-section">
-                <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> <img src="img/we're-building-a-future-where.png" class="building-a-future" </h1>
+                
+                <div class="scrollme">
+                    <div
+                        class="animateme"
+                        data-when="enter"
+                        data-from="0.5"
+                        data-to="1"
+                        data-translatey="300"
+                        data-easing="linear"
+                    >
+                        <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> <img src="img/we're-building-a-future-where.png" class="building-a-future"/> </h1>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -93,10 +104,22 @@
 
         <section class="main section-4-horizon" id="section-4-horizon">
             <img src="img/section-4-horizon.jpg" class="sectionBG"/>
-            <img id="bsquare" src="img/b-square.png"/>
             <div class="section-content">
                 
                 <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...A future where science is advanced by citizens ...and the tech for citizen science can be fabricated anywhere</h1>
+
+            </div>
+            <div class="scrollme bsquare-box">
+                <div
+                    class="animateme"
+                    data-when="enter"
+                    data-from="1"
+                    data-to="0"
+                    data-translatex="1200"
+                    data-easing="linear"
+                >
+                    <img id="bsquare" src="img/b-square.png"/>
+                </div>
             </div>
 
         </section>
@@ -253,53 +276,14 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+        <script src="js/jquery.scrollme.min.js"></script>
 
+        <!-- janky click function to bring up overlay mock -->
         <script type="text/javascript">
-        // init controller
-        var controller = new ScrollMagic.Controller();
-
-        // create a scene
-        new ScrollMagic.Scene({
-                duration: 300,    // the scene should last for a scroll distance of --px
-                offset: 200        // start this scene after scrolling for --px
-            })
-            .setPin("#top-section") // pins the element for the the scene's duration
-            .addTo(controller); // assign the scene to the controller
-
-            new ScrollMagic.Scene({
-                duration: 180,    // the scene should last for a scroll distance of --px
-                offset: 1550        // start this scene after scrolling for --px
-            })
-            .setPin("#bsquares-text") // pins the element for the the scene's duration
-            .addTo(controller); // assign the scene to the controller
-
-            // var blockTween = new TweenMax.to('#bsquare', 0.5, {left: 100%;});
-            var blockTween = new TweenMax.to('#block', 1.5, {
-                backgroundColor: 'red'
-            });
-
-            new ScrollMagic.Scene({
-                triggerElement: ".b-squares-badge"
-            })
-            .setTween(blockTween) // trigger a TweenMax.to tween
-            .addTo(controller);
-
-            
-
-
-    </script>
-
-
-    <script type="text/javascript">
-        function showUltrascopeOverlay() {
-            $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
-        }
-    </script>
+            function showUltrascopeOverlay() {
+                $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
+            }
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

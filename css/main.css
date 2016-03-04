@@ -246,10 +246,17 @@ div.section-content#whisky-in-space {
 }
 
 #bsquare {
-    width: 60px;
-    left: 0%;
+    z-index: 2000;
+    width: 80px;
+    height: 80px;
+}
+
+.bsquare-box {
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 60px;
+    top: 2%;
+    left: -100px;
 }
 
 div.part2 {
