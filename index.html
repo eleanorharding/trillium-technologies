@@ -69,9 +69,9 @@
                 <p> The first whisky glass engineered and tested in Microgravity </p>
             </div>
 
-            <div class="section-content ">
-                <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> 
-                <!-- <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; </h1> -->
+            <div class="section-content " id="whisky-in-space">
+                <!-- <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> --> 
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; Space tourists can enjoy whisky in zero G</h1>
             </div>
         </section>
 
@@ -79,23 +79,26 @@
             <img src="img/section-3-BSQ.jpg" class="sectionBG"/>
             <img src="img/ISS-interior.png" class="fixed b-square-circle wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"/>
 
-            <div class="project-badge b-squares-badge wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">
+            <div class="project-badge b-squares-badge wow fadeInDown" id="b-squares-badge" data-wow-delay="0.2s" data-wow-duration="1s">
                 <h3> B Squares</h3>
                 <p> A modular electronics system enabling customized devices that clip together. </p>
             </div>
 
-            <div class="section-content bsquarestext">
-                <!-- <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...Where anyone can build and deploy a nanoSatellite in seconds </h1> -->
-                <img src="img/nanosatellite.png" class="nanosatellite wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s"/>
+            <div class="section-content bsquarestext" id="bsquares-text">
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...Where anyone can build and deploy a nanoSatellite in seconds </h1>
+                <!-- <img src="img/nanosatellite.png" class="nanosatellite wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s"/> -->
+
             </div>
         </section>
 
-        <section class="main section-4-horizon">
+        <section class="main section-4-horizon" id="section-4-horizon">
             <img src="img/section-4-horizon.jpg" class="sectionBG"/>
-
+            <img id="bsquare" src="img/b-square.png"/>
             <div class="section-content">
+                
                 <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...A future where science is advanced by citizens ...and the tech for citizen science can be fabricated anywhere</h1>
             </div>
+
         </section>
 
         <section class="main section-5-village">
@@ -252,6 +255,9 @@
         <script src="js/main.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
 
         <script type="text/javascript">
         // init controller
@@ -259,11 +265,33 @@
 
         // create a scene
         new ScrollMagic.Scene({
-                duration: 300,    // the scene should last for a scroll distance of 100px
-                offset: 200        // start this scene after scrolling for 50px
+                duration: 300,    // the scene should last for a scroll distance of --px
+                offset: 200        // start this scene after scrolling for --px
             })
             .setPin("#top-section") // pins the element for the the scene's duration
             .addTo(controller); // assign the scene to the controller
+
+            new ScrollMagic.Scene({
+                duration: 180,    // the scene should last for a scroll distance of --px
+                offset: 1550        // start this scene after scrolling for --px
+            })
+            .setPin("#bsquares-text") // pins the element for the the scene's duration
+            .addTo(controller); // assign the scene to the controller
+
+            // var blockTween = new TweenMax.to('#bsquare', 0.5, {left: 100%;});
+            var blockTween = new TweenMax.to('#block', 1.5, {
+                backgroundColor: 'red'
+            });
+
+            new ScrollMagic.Scene({
+                triggerElement: ".b-squares-badge"
+            })
+            .setTween(blockTween) // trigger a TweenMax.to tween
+            .addTo(controller);
+
+            
+
+
     </script>
 
 
