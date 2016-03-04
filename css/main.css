@@ -444,6 +444,63 @@ div.onscreen {
     width: 100%;
 }
 
+.relationships {
+    margin: 0px 40px;
+}
+
+.relationships img {
+    max-width: 200px;
+}
+
+.relationships > div {
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    margin: -1px -8px;
+}
+
+.plus:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+}
+
+.plus:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+
+.TL, .TL:before, .TL:after {
+    top: 0;
+    left: 0;
+}
+
+.TR, .TR:before, .TR:after {
+    top: 0;
+    right: 0;
+}
+
+.BL, .BL:before, .BL:after {
+    bottom: 0;
+    left: 0;
+}
+
+.BR, .BR:before, .BR:after {
+    bottom: 0;
+    right: 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
