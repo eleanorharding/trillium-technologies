@@ -520,7 +520,11 @@ section#secondary-13-mavericks{
   font-size: 0.7em;
   text-align: center;
   margin-left:15px;
-  margin-top:-5px;
+  margin-top:5px;
+}
+
+.secondary-project-title a:hover{
+
 }
 
 
@@ -566,7 +570,7 @@ section#secondary-13-mavericks{
   background-color:#82BAB6;
   background-image:url(../img/projectBackground.jpg);
   background-size:cover;
-  width:100%;
+  width:65%;
   height:inherit;
   display:inline-block;
   margin-left:-50px;
@@ -575,18 +579,22 @@ section#secondary-13-mavericks{
   /*border:solid rgba(255,255,255,0.5) 5px;*/
 }
 
-.secondary-project-gallery img{
-  width:30%;
+/*.secondary-project-gallery img{
+  width:35%;
   margin-left:15%;
   margin-top:65px;
 
 
-}
+}*/
 
 .secondary-project-gallery a{
   position:absolute;
-  left:60%;
+  left:93%;
 
+}
+
+.secondary-project-gallery a:hover{
+  text-decoration: underline;
 }
 
 
