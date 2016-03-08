@@ -429,11 +429,12 @@ div.part2 div {
     margin-left:0;
     padding-right:0;
 
+
 }
 
 section.secondary {
-  /*margin-top:100px;*/
-  height: 900px; /* Default secondary height, set precise h in spec. class */
+
+  height: 950px; /* Default secondary height, set precise h in spec. class */
   /*border:2px solid white;*/
   color:white;
 
@@ -459,8 +460,6 @@ section#secondary-5-dropfab{
 
 section#secondary-6-ultrascope{
 
-  background:url("../img/overlays/ultrascope-overlay.jpg");
-  background-size:cover;
   background-color:#7A6468;
 }
 
@@ -497,12 +496,12 @@ section#secondary-13-mavericks{
 
 .secondary-project-title{
   position:absolute;
-  background-image: url("../img/dropfab-title.png");
+  /*background-image: url("../img/dropfab-title.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top;*/
 
 
-  width:7%;
+  width:8%;
   height:inherit;
   background-color: #fff;
   display:inline-block;
@@ -510,6 +509,19 @@ section#secondary-13-mavericks{
   padding:0;
 }
 
+.secondary-project-title img{
+  margin-top:25px;
+  margin-left:35px;
+
+}
+
+.secondary-project-title a{
+  color: rgba(0,0,0,0.4);
+  font-size: 0.7em;
+  text-align: center;
+  margin-left:15px;
+  margin-top:-5px;
+}
 
 
 .secondary-project-desc{
@@ -529,12 +541,12 @@ section#secondary-13-mavericks{
 .secondary-project-desc h1{
   font-family: 'robotolight';
   text-align: left;
-  color:black;
+  color:rgba(0,0,0,0.9);
   margin-left:30px;
   margin-top:30px;
   margin-bottom:3px;
-  letter-spacing:-0.5px;
-  font-size:1.3em;
+  letter-spacing:2px;
+  font-size:1.2em;
   font-weight: BOLD;
 
 }
@@ -542,7 +554,7 @@ section#secondary-13-mavericks{
 .secondary-project-desc p{
   font-family: 'robotolight';
   text-align: left;
-  color:black;
+  color:rgba(0,0,0,0.7);
   margin:0 70px 50px 30px;
   font-weight: BOLD;
 
@@ -553,12 +565,28 @@ section#secondary-13-mavericks{
   border-left:50px solid rgba(255,255,255,0.05);
   background-color:#82BAB6;
   background-image:url(../img/projectBackground.jpg);
-  /*background-size:cover;*/
+  background-size:cover;
   width:100%;
   height:inherit;
   display:inline-block;
   margin-left:-50px;
   /*z-index:1;*/
+
+  /*border:solid rgba(255,255,255,0.5) 5px;*/
+}
+
+.secondary-project-gallery img{
+  width:30%;
+  margin-left:15%;
+  margin-top:65px;
+
+
+}
+
+.secondary-project-gallery a{
+  position:absolute;
+  left:60%;
+
 }
 
 
