@@ -318,7 +318,7 @@ div.part2 div {
     background-color: rgba(30,30,30,0.87);
     letter-spacing: 3px;
     font-size: 0.8em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     opacity: 0.87;
     max-width: 50%;
     margin: 0 auto;
@@ -334,6 +334,11 @@ div.part2 div {
     opacity: 0.9;
     margin-left: 10px;
     
+}
+
+.margin-bubble {
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .project-badge {
@@ -507,11 +512,19 @@ div.onscreen {
     font-size: 1.6em;
     display: block;
     letter-spacing: 5px;
-    margin: 2px 0px 20px 0px;
+    
     font-weight: normal;
     text-transform: uppercase;
     font-style: normal;
     opacity: 0.87;
+}
+
+.text-small {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+    /*text-transform: lowercase;*/
+    margin: 20px 0px 2px 0px;
 }
 
 h1.future-where-text {
@@ -528,7 +541,7 @@ h1.future-where-text {
     padding: 10px;
     padding-top:20px;
     padding-bottom: 20px;
-    border-bottom: 10px solid #111;
+    border-bottom: 10px solid #9fd3ff;
 }
 
 .trillium-footer p {
@@ -618,7 +631,7 @@ p.copyright {
 }
 
 .team {
-    padding: 100px 0px; 
+    padding: 100px 50px 100px 0px; 
 }
 
 .astro-holder {
@@ -627,7 +640,47 @@ p.copyright {
 
 .team-member {
     position: absolute;
+    right: 0;
 }
+
+.team-member h4 {
+    font-family: ailerons;
+    color: #ddd;
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.astro-holder:nth-child(1) .team-member {
+    right: 20%;
+}
+
+.astro-holder:nth-child(6) .team-member {
+    
+}
+
+.main-content {
+    padding-top:75px;
+}
+
+.contact-us {
+    width: 75%;
+    margin: 0 auto;
+    padding: 100px 0px; 
+}
+
+.contact-us-left > div{
+    float: right;
+}
+
+.contact-us-right > div{
+    padding-left: 100px;
+}
+
+.contact-us h3, .contact-us p {
+    color: #ddd;
+}
+
 
 /* ==========================================================================
    Helper classes
