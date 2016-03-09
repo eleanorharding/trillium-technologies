@@ -624,7 +624,7 @@ section#secondary-13-mavericks{
   left:36.7%;
 
   background-color:#82BAB6;
-  background-image:url(../img/projectBackground.jpg);
+  /*background-image:url(../img/projectBackground.jpg);*/
   background-size:cover;
   width:66%;
   height:inherit;
@@ -644,17 +644,18 @@ section#secondary-13-mavericks{
   z-index:10;
 }
 
-/*.secondary-project-gallery img{
-  width:35%;
-  margin-left:15%;
-  margin-top:65px;
+.gallery{
+  position:absolute;
+  z-index:0;
 
 
-}*/
+}
 
 .secondary-project-gallery a{
   position:absolute;
   left:93%;
+  margin-top:10px;
+  z-index:111;
 
 }
 
@@ -662,6 +663,34 @@ section#secondary-13-mavericks{
   text-decoration: underline;
 }
 
+.gallery-1{
+
+}
+
+.gallery-2{
+  display: none;
+}
+
+.gallery-3{
+  display: none;
+}
+
+.gallery-thumbs{
+
+  position:absolute;
+  bottom:50px;
+  left:50px;
+  /*top:-100px;*/
+}
+.gallery-thumbs li{
+  cursor:pointer;
+  display:inline;
+  margin:10px;
+}
+.gallery-thumbs li img{
+  width:100px;
+  z-index:100;
+}
 
 .overlay {
     position: fixed;
@@ -825,7 +854,7 @@ ul.footer-missions, ul.footer-about {
 }
 .footer-missions li, .footer-about li {
 
-    padding: 1px 0px; 
+    padding: 1px 0px;
 }
 
 .footer-missions li a:hover, .footer-about li a:hover {
@@ -845,7 +874,7 @@ ul.footer-missions, ul.footer-about {
     /*bottom: 20px;
     right: 20px;*/
 
-    
+
 }
 
 .trillium-footer-about {
@@ -853,10 +882,10 @@ ul.footer-missions, ul.footer-about {
 }
 
 p.copyright {
-    font-size: 0.7em; 
+    font-size: 0.7em;
     color: #bbb;
     letter-spacing: 1px;
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
 
 .team img.astronaut {
@@ -864,7 +893,7 @@ p.copyright {
 }
 
 .team {
-    padding: 100px 0px; 
+    padding: 100px 0px;
 }
 
 .astro-holder {

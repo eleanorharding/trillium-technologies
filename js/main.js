@@ -32,7 +32,9 @@ $('.project-link').bind('click',function(event){
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
        timeout = window.setTimeout(setHash, 1000);
-       $('html, body').css('overflowY', 'hidden');
+       $('html').css('overflowY', 'hidden');
+
+
 
 
 
@@ -54,7 +56,7 @@ $('.project-link').bind('click',function(event){
          event.preventDefault();
          $rightAnchor = " ";
          timeout = window.setTimeout(setHash, 1000);
-         $('html').css('overflowY', 'auto'); 
+         $('html').css('overflowY', 'auto');
   });
 
 
@@ -66,4 +68,17 @@ $( ".statnumber" ).each(function() {
   var random_color = colors[Math.floor(Math.random() * colors.length)];
   var random_alpha = (Math.random() * (0.08 - 0.3) + 0.3);
   $(this).css("background-color", "rgba("+random_color+random_alpha+")");
+});
+
+/*gallery*/
+$('*[class^="thumb"]').bind('click',function(event){
+  var fullname = $(this).attr('class');
+  var arr = fullname.split('-');
+  var number = arr[1];
+
+  $('.gallery-1').css("display", "none");
+  $('.gallery-2').css("display", "none");
+  $('.gallery-3').css("display", "none");
+  $('.gallery-'+number).css("display", "block");
+  console.log(number);
 });
