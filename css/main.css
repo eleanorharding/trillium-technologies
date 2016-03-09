@@ -548,7 +548,7 @@ section#secondary-13-mavericks{
   color:rgba(0,0,0,0.9);
   margin-left:30px;
   margin-top:30px;
-  margin-bottom:3px;
+  margin-bottom:5px;
   letter-spacing:2px;
   font-size:1.2em;
   font-weight: BOLD;
@@ -559,10 +559,65 @@ section#secondary-13-mavericks{
   font-family: 'robotolight';
   text-align: left;
   color:rgba(0,0,0,0.7);
-  margin:0 70px 50px 30px;
+  font-size:0.8em;
+  margin:0 70px 15px 30px;
   font-weight: BOLD;
 
 }
+.stats{
+  padding-top:30px;
+  margin-left:30px;
+}
+.statbox{
+  margin-bottom:20px;
+}
+.statnumber{
+  display:inline-block;
+  background-color:#e4ecec;
+  height:55px;
+  width:55px;
+
+  text-align: center;
+
+
+}
+.statnumber p{
+  font-family:'ailerons';
+  letter-spacing:-10px;
+  font-size:2.2em;
+    text-align: center;
+    margin:0 10px 0 0 ;
+    color:rgba(0,0,0,0.5);
+}
+
+.stattext{
+
+  display: inline-block;
+  margin-top: -15px;
+
+}
+
+.stattext p{
+  /*font-family:'ailerons';*/
+    color:rgba(0,0,0,0.6);
+    font-size:1.2em;
+    margin: -15px 0 0 20px;
+
+    letter-spacing:1px;
+}
+
+.mission-partners{
+  /*text-align:center;*/
+  margin-top:40px;
+}
+
+.mission-partners img{
+
+  max-width: 100px;
+  margin-top:10px;
+  margin-left:30px;
+}
+
 .secondary-project-gallery{
   position:absolute;
   left:36.7%;
