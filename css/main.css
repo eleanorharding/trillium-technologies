@@ -218,6 +218,10 @@ h1 {
     font-weight: normal;
 }
 
+h1.story {
+    text-shadow: 1px 1px 1px rgba(60, 60, 60, 0.4);
+}
+
 header {
     height: 45px;
     position: fixed;
@@ -315,6 +319,10 @@ div.section-content.bsquarestext {
     top: 10%;
 }
 
+div.section-content.where-everyone-text {
+    top: 60%;
+}
+
 div.section-content#whisky-in-space {
     top:35%;
 }
@@ -329,7 +337,7 @@ div.section-content#whisky-in-space {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: -100px;
 }
 
@@ -380,6 +388,13 @@ div.part2 div {
     top:25%;
 }
 
+div.section-content.fuelpod-ultrascope-text {
+    top: 95%;
+}
+
+div.section-content.health-of-an-ecosystem-text {
+    top: 50%;
+}
 
 .fixed {
     position: absolute;
@@ -388,13 +403,17 @@ div.part2 div {
 .story {
     font-family: 'robotolight';
     padding: 10px;
-    background-color: rgba(30,30,30,0.87);
+    /*background-color: rgba(30,30,30,0.87);*/
     letter-spacing: 3px;
     font-size: 0.8em;
     /*text-transform: uppercase;*/
     opacity: 0.87;
     max-width: 50%;
     margin: 0 auto;
+}
+
+.black-background {
+    background-color: rgba(30,30,30,0.87);
 }
 
 .nav-CTA {
@@ -415,15 +434,63 @@ div.part2 div {
 }
 
 .project-badge {
-    background-color: rgba(255,255,255,0.5);
+    
     text-align: left;
     max-width: 250px;
-    padding: 10px;
+    
     border-left: 3px solid #fff;
     border-right: 3px solid #fff;
-    font-size: 0.7em;
+    font-size: 0.8em;
     position: absolute;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    
+}
+
+.project-badge:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+}
+
+.project-badge:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+}
+
+.project-badge div:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    top:0;
+    right:0;
+}
+
+.project-badge div:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    right: 0;
+}
+
+.project-badge div {
+    background-color: rgba(210,210,210,0.6);
+    padding: 10px;
+    margin: 6px 3px;
+    /*box-shadow: 0px 0px 50px rgba(0,20,50,0.2);*/
 }
 
 .project-badge h3 {
@@ -438,12 +505,24 @@ div.part2 div {
 .project-badge p {
     color: #fff;
     margin: 5px 2px;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
 }
 
 .space-glass-badge {
     top: 49%;
     right: 1%;
+}
+
+.project-badge div:nth-child(2) {
+    padding: 1px;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.project-badge div:nth-child(2):hover {
+    opacity: 1;
 }
 
 .b-squares-badge {
@@ -457,12 +536,12 @@ div.part2 div {
 }
 
 .ultrascope-badge {
-    top: 88%;
+    bottom: 1%;
     right: 1%;
 }
 
 .fuelpod-badge {
-    top: 88%;
+    bottom: 1%;
     left: 1%;
 }
 
@@ -472,7 +551,7 @@ div.part2 div {
 }
 
 .phi-badge {
-    top: 45%;
+    top: 65%;
     right: 40%;
 }
 
@@ -582,7 +661,7 @@ div.onscreen {
 }
 
 .text-medium {
-    font-size: 1.6em;
+    font-size: 1.7em;
     display: block;
     letter-spacing: 5px;
     
@@ -593,7 +672,7 @@ div.onscreen {
 }
 
 .text-small {
-    font-size: 0.9em;
+    font-size: 1em;
     font-style: italic;
     opacity: 0.7;
     /*text-transform: lowercase;*/
@@ -603,9 +682,13 @@ div.onscreen {
 h1.future-where-text {
     background-color: transparent;
     text-transform: lowercase;
-    font-size: 0.9em;
+    /*font-size: 0.9em;*/
     font-style: italic;
     opacity: 0.6;
+}
+
+div.section-content.explore-monitor-protect-text {
+    top: 90%;
 }
 
 .trillium-footer {
