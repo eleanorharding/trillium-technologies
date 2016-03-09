@@ -52,47 +52,66 @@
             </ul>
         </header>
 
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+
         <section class="starshine">
+
+            <h2> We are a team of designers and engineers dedicated to developing technology platforms that tackle grand challenges.
+            </h2>
 
             <div class="pure-g team">
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>Jordan McRae</h4>
+                        <h5> CTO & Co-Founder </h5>
                     </div>
                     <img class="astronaut" src="../img/astro-jordan.png"/>
                 </div>
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>James Parr</h4>
+                        <h5> CEO & Co-Founder </h5>
                     </div>
                     <img class="astronaut" src="../img/astro-james.png"/>
                 </div>
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>Anchal Bassi</h4>
+                        <h5> Project Manager</h5>
                     </div>
                     <img class="astronaut" src="../img/astro-anchal.png"/>
                 </div>
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>Eleanor Harding</h4>
+                        <h5> UX Designer </h5>
                     </div>
                     <img class="astronaut" src="../img/astro-eleanor.png"/>
                 </div>
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>Jon Rushton</h4>
+                        <h5> Industrial Designer </h5>
                     </div>
                     <img class="astronaut" src="../img/astro-jon.png"/>
                 </div>
                 <div class="pure-u-1-3 astro-holder">
                     <div class="team-member">
                         <h4>Leo Silverberg</h4>
+                        <h5> Interaction Designer </h5>
                     </div>
                     <img class="astronaut" src="../img/astro-leo.png"/>
                 </div>
             </div>
 
+            <p> We're always looking for passionate people with great minds.  To submit a spontaneous application to Trillium Technologies contact us <a href="mailto:jobs@trillium.tech?subject=Jobs">here</a> with a CV and Cover letter.  
+            </p>
         </section>
 
         <footer class="pure-g trillium-footer">
@@ -176,6 +195,17 @@
         <script src="../js/main.js"></script>
         <script src="../js/jquery.scrollme.min.js"></script>
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+    
+                setTimeout(function(){
+                    $('body').addClass('loaded');
+                    $('h1').css('color','#222222');
+                }, 3000);
+            
+            });
+        </script>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
