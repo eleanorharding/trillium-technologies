@@ -134,6 +134,7 @@ body {
 a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 h1 {
@@ -255,7 +256,7 @@ div.section-content#whisky-in-space {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 2%;
+    top: 7%;
     left: -100px;
 }
 
@@ -344,7 +345,7 @@ div.part2 div {
     border-right: 3px solid #fff;
     font-size: 0.7em;
     position: absolute;
-    box-shadow: 0px 0px 10px #444;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 
 .project-badge h3 {
@@ -445,7 +446,8 @@ div.onscreen {
 }
 
 .relationships {
-    margin: 0px 40px;
+    margin: 0px 70px;
+    padding: 100px 0px;
 }
 
 .relationships img {
@@ -499,6 +501,132 @@ div.onscreen {
 .BR, .BR:before, .BR:after {
     bottom: 0;
     right: 0;
+}
+
+.text-medium {
+    font-size: 1.6em;
+    display: block;
+    letter-spacing: 5px;
+    margin: 2px 0px 20px 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: normal;
+    opacity: 0.87;
+}
+
+h1.future-where-text {
+    background-color: transparent;
+    text-transform: lowercase;
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.trillium-footer {
+    margin-top: 50px;
+    background-color: #222;
+    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-bottom: 10px solid #111;
+}
+
+.trillium-footer p {
+    color: #777;
+    font-size: 0.9em;
+
+}
+
+.trillium-footer > div > div {
+    padding: 10px;
+}
+
+.footer-trillium-logo {
+    max-width: 250px;
+    /*margin-top: 30px;*/
+}
+
+.social-icons {
+    width: 35px;
+    opacity: 0.5;
+}
+
+.social-icons:hover {
+    opacity: 1;
+}
+
+ul.footer-missions, ul.footer-about {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.7em;
+    opacity: 0.7;
+    margin: 0px;
+}
+
+.trillium-footer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+
+.trillium-footer-missions, .trillium-footer-about {
+    /*margin-top: 50px;*/
+}
+
+.footer-missions li a, .footer-about li a {
+    opacity: 0.7;
+
+}
+.footer-missions li, .footer-about li {
+
+    padding: 1px 0px; 
+}
+
+.footer-missions li a:hover, .footer-about li a:hover {
+    opacity: 1;
+}
+
+.footer-CTA {
+    padding: 15px;
+    background-color: #3481c5;
+    /*border-radius: 2px;*/
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    /*margin-top: 60px;*/
+    /*position: absolute;*/
+    /*bottom: 20px;
+    right: 20px;*/
+
+    
+}
+
+.trillium-footer-about {
+    position: relative;
+}
+
+p.copyright {
+    font-size: 0.7em; 
+    color: #bbb;
+    letter-spacing: 1px;
+    padding: 10px 0px; 
+}
+
+.team img.astronaut {
+    width: 80%;
+}
+
+.team {
+    padding: 100px 0px; 
+}
+
+.astro-holder {
+    position: relative;
+}
+
+.team-member {
+    position: absolute;
 }
 
 /* ==========================================================================
