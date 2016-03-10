@@ -653,18 +653,18 @@ section#secondary-13-mavericks{
 }
 
 .secondary-project-title{
-  position:absolute;
+  /*position:absolute;*/
   /*background-image: url("../img/dropfab-title.png");
   background-repeat: no-repeat;
   background-position: center top;*/
 
 
-  width:8%;
+  /*width:8%;*/
   height:inherit;
   background-color: #fff;
   display:inline-block;
-  margin:0;
-  padding:0;
+  /*margin:0;
+  padding:0;*/
 }
 
 .secondary-project-title img{
@@ -687,17 +687,16 @@ section#secondary-13-mavericks{
 
 
 .secondary-project-desc{
-  position:absolute;
-  left:7%;
+  /*position:absolute;
+  left:7%;*/
   background-color:#F4F7F9;
   height:inherit;
-  width:29%;
-  display:inline-block;
-  /*margin:-6px;*/
-  padding:0;
+  /*width:29%;*/
+  /*display:inline-block;*/
+
+  /*padding:0;*/
 
 
-  /*z-index:10;*/
 }
 
 .secondary-project-desc h1{
@@ -777,16 +776,16 @@ section#secondary-13-mavericks{
 }
 
 .secondary-project-gallery{
-  position:absolute;
-  left:36.7%;
+  /*position:absolute;
+  left:36.7%;*/
 
   background-color:#82BAB6;
   /*background-image:url(../img/projectBackground.jpg);*/
   background-size:cover;
-  width:66%;
+  /*width:66%;*/
   height:inherit;
   display:inline-block;
-  margin-left:-50px;
+  /*margin-left:-50px;*/
   /*z-index:1;*/
 
   /*border:solid rgba(255,255,255,0.5) 5px;*/
@@ -794,7 +793,7 @@ section#secondary-13-mavericks{
 
 .invisiBorder{
   position:absolute;
-  left:34%;
+
   background-color:rgba(255,255,255,0.3);
   width: 50px;
   height:950px;
