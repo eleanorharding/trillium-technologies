@@ -22,13 +22,13 @@
         <![endif]-->
 
         <header>
-            <img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/>
+            <a href="http://localhost/git/trillium-technologies/#"><img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
             <ul class="main-navigation">
 
                 <li> <a href="#">Missions</a>
 
                     <ul class="sub-nav">
-                        <li> <a href="#">Space Glass</a>  </li>
+                        <li> <a href="#space-glass">Space Glass</a>  </li>
                         <li> <a href="#">B-Squares</a>  </li>
                         <li> <a href="#">Dropfab</a>  </li>
                         <li> <a href="#">Ultrascope</a>  </li>
@@ -42,8 +42,8 @@
                 <li> <a href="#">About</a>
                     <ul class="sub-nav">
                         <li> <a href="#">How we work</a>  </li>
-                        <li> <a href="#">Team</a>  </li>
-                        <li> <a href="#">Contact Us</a>  </li>
+                        <li> <a href="team">Team</a>  </li>
+                        <li> <a href="contact">Contact Us</a>  </li>
                     </ul>
                 </li>
                 <li>
@@ -75,15 +75,23 @@
         </section>
 
 
+        <section class="main section-2-ISS" id="space-glass">
 
-        <section class="main section-2-ISS">
             <img src="img/section-2-ISS.jpg" class="sectionBG"/>
             <img src="img/space-glass.png" class="fixed space-glass-circle wow zoomIn" data-wow-duration="1s"/>
 
             <div class="project-badge space-glass-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-2-ISS"><h3> Space Glass </h3>
-                <p> The first whisky glass engineered and tested in Microgravity </p>
-                </a>
+
+                <div>
+                    <h3> Space Glass </h3>
+                    <p> The first whisky glass engineered and tested in Microgravity </p>
+                </div>
+                <div>
+                    <a class="project-link" href="#secondary-2-ISS">
+                      <p> MORE > </p>
+                    </a>
+                </div>
+
             </div>
 
 
@@ -91,29 +99,38 @@
 
                 <!-- <img src="img/space-tourists.png" class="space-tourists wow fadeInUp"/> -->
                 <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s">
-                    Space tourists can enjoy
+                    <span class="text-small"> Space tourists can enjoy </span>
+
                     <span class="text-medium">whisky in zero-G</span>
                 </h1>
 
             </div>
         </section>
 
-        <section class="main section-3-BSQ">
+        <section class="main section-3-BSQ" id="b-squares">
             <img src="img/section-3-BSQ.jpg" class="sectionBG"/>
             <img src="img/ISS-interior.png" class="fixed b-square-circle wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"/>
 
 
             <div class="project-badge b-squares-badge wow fadeInDown" id="b-squares-badge" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-3-BSQ"><h3> B Squares</h3>
-                <p> A modular electronics system enabling customized devices that clip together. </p>
-                </a>
+
+                <div>
+                    <h3> B Squares</h3>
+                    <p> A modular electronics system enabling customized devices that clip together. </p>
+                </div>
+                <div>
+                  <a class="project-link" href="#secondary-3-BSQ">
+                    <p> MORE > </p>
+                  </a>
+                </div>
             </div>
 
             <div class="section-content bsquarestext" id="bsquares-text">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
-                    ...Where anyone can
+                <h1 class="wow fadeInUp story black-background" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                    <span class="text-small">...Where anyone can </span>
+
                     <span class="text-medium">build and deploy a nanoSatellite </span>
-                    in seconds
+                    <span class="text-small">in seconds </span>
                 </h1>
                 <!-- <img src="img/nanosatellite.png" class="nanosatellite wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s"/> -->
 
@@ -126,9 +143,9 @@
 
 
                 <h1 class="wow fadeInUp story future-where-text" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
-                    A future where
+                    <span class="text-small">A future where </span>
                     <span class="text-medium">science is advanced by citizens </span>
-                    and
+                    <span class="text-small margin-bubble">and </span>
                     <span class="text-medium">the tech for citizen science can be fabricated anywhere</span>
                 </h1>
 
@@ -141,6 +158,7 @@
                     data-from="1"
                     data-to="0"
                     data-translatex="1200"
+                    data-translatey="-30"
                     data-easing="linear"
                 >
                     <img id="bsquare" src="img/b-square.png"/>
@@ -149,103 +167,183 @@
 
         </section>
 
-        <section class="main section-5-village">
+        <section class="main section-5-village" id="dropfab">
             <img src="img/section-5-village.jpg" class="sectionBG"/>
 
             <div class="project-badge dropfab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-5-dropfab"><h3> Dropfab </h3>
-                <p> A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe. </p>
-                </a>
+
+                <div>
+                    <h3> Dropfab </h3>
+                    <!-- <a class="project-link" href="#secondary-5-dropfab"> -->
+                    <p> A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe. </p>
+
+                </div>
+                <div>
+
+                  <a class="project-link" href="#secondary-3-BSQ">
+                    <p> MORE > </p>
+                  </a>
+
+                </div>
             </div>
 
-            <div class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-6-ultrascope"><h3> ULTRASCOPE</h3>
+            <div id="ultrascope" class="project-badge ultrascope-badge wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div>
+                    <h3> ULTRASCOPE</h3>
+                    <p> An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids. </p>
+                </div>
 
-                <p> An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids. </p>
-                </a>
+                <div>
+                  <a class="project-link" href="#secondary-6-ultrascope">
+                    <p> MORE > </p>
+                  </a>
+                </div>
+
+
             </div>
 
             <div class="overlay offscreen" id="ultrascope-overlay" onclick="showUltrascopeOverlay()">
                 <img src="img/overlays/ultrascope-overlay.jpg" />
             </div>
 
-            <div class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-7-fuelpod"><h3> Fuelpod</h3>
-                <p> A robust rapid deployment smart energy microgrid for disaster response. </p>
-                </a>
+
+            <div id="fuelpod" class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div>
+                    <h3> Fuelpod</h3>
+                    <p> A robust rapid deployment smart energy microgrid for disaster response. </p>
+                </div>
+            <div>
+                    <a class="project-link" href="#secondary-7-fuelpod">
+                    <p>     MORE > </p>
+                    </a>
+                </div>
+
+
             </div>
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; Where amateur astronomers can help NASA protect our planet from Asteroids. Where power and WiFi can be rapidly deployed within the first 24 hours after a natural disaster </h1>
+            <div class="section-content fuelpod-ultrascope-text">
+                <h1 class="wow fadeInUp story " data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                <span class="text-small">Where amateur astronomers can</span>
+                <span class="text-medium"> help NASA protect our planet from incoming Asteroids.</span>
+                <span class="text-small margin-bubble"> And where </span>
+                <span class="text-medium">power and WiFi can be rapidly deployed </span>
+                <span class="text-small">within the first 24 hours after a natural disaster </span>
+                </h1>
             </div>
         </section>
 
         <section class="main section-6-shore">
             <img src="img/section-6-shore.jpg" class="sectionBG"/>
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...A future where we explore, monitor and protect our oceans.... </h1>
+            <div class="section-content explore-monitor-protect-text">
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                <span class="text-small">...A future where we </span>
+                <span class="text-medium">explore, monitor & protect our oceans... </span>
+                </h1>
             </div>
         </section>
 
-        <section class="main section-7-underwater">
+        <section class="main section-7-underwater" id="octotalk">
             <img src="img/section-7-underwater.jpg" class="sectionBG"/>
             <img src="img/scuba.png" class="fixed scuba-divers"/>
 
             <div class="project-badge octotalk-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-9-octotalk"><h3> OCTOTALK </h3>
-                <p> A revolutionary underwater communication technology that allows divers to speak freely to other divers and drones.
-                </p>
-                </a>
+
+                <div>
+                    <h3> OCTOTALK </h3>
+                    <p> A revolutionary underwater communication technology that allows divers to speak freely to other divers and drones.
+                    </p>
+                </div>
+                <div>
+                    <a class="project-link" href="#secondary-9-octotalk"><p> MORE > </p></a>
+                </div>
+
             </div>
 
             <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;  Where divers can communicate to enhance the study and protection of the oceans</h1>
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                    <span class="text-small">Where </span>
+                    <span class="text-medium">divers can communicate underwater</span>
+                    <span class="text-small">to enhance the study and protection of the oceans</span>
+                </h1>
 
             </div>
         </section>
 
-        <section class="main section-8-coast">
+        <section class="main section-8-coast" id="phi">
             <img src="img/section-8-coast.jpg" class="sectionBG"/>
 
             <div class="project-badge phi-badge wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-11-phi"><h3> PHI </h3>
-                <p> The Planetary Health Index (PHI) is a platform for measuring and assessing the ecological health of nature - AKA -natural capital - enabling better stewardship of our planet.  </p>
-                </a>
+
+                <div>
+                    <h3> PHI </h3>
+                    <p> The Planetary Health Index (PHI) is a platform for measuring and assessing the ecological health of nature - AKA -natural capital - enabling better stewardship of our planet.  </p>
+                </div>
+                <div>
+                    <a class="project-link" href="#secondary-11-phi">
+                    <p> MORE > </p>
+                    </a>
+                </div>
             </div>
 
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...And the health of an ecosystem can be determined in realtime</h1>
+            <div class="section-content health-of-an-ecosystem-text">
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                <span class="text-small">...And </span>
+                <span class="text-medium">the health of an ecosystem </span>
+                <span class="text-small">can be determined in realtime </span>
+                </h1>
             </div>
         </section>
 
-        <section class="main section-9-atmosphere">
+        <section class="main section-9-atmosphere" id="open-space-agency">
             <img src="img/section-9-atmosphere.jpg" class="sectionBG"/>
 
             <div class="project-badge osa-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-12-osa"><h3> THE OPEN SPACE AGENCY </h3>
-                <p> Dedicated to unlocking the talent, insight and creativity of citizen space explorers around the world.  </p>
-                </a>
+
+                <div>
+                    <h3> THE OPEN SPACE AGENCY </h3>
+                    <p> Dedicated to unlocking the talent, insight and creativity of citizen space explorers around the world.  </p>
+
+                </div>
+                <div>
+                    <a class="project-link" href="#secondary-12-osa">
+                    <p> MORE > </p>
+                  </a>
+                </div>
+
             </div>
 
-            <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...Where everyone can have their own space program </h1>
+            <div class="section-content where-everyone-text">
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                <span class="text-small">...Where everyone</span>
+                <span class="text-medium"> can have their own space program </span>
+                </h1>
             </div>
         </section>
 
-        <section class="main stars">
+        <section class="main stars" id="mavericks-lab">
             <img src="img/stars.jpg" class="sectionBG"/>
             <img src="img/asteroid.png" class="fixed asteroid"/>
 
             <div class="project-badge mavericks-lab-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-                <a class="project-link" href="#secondary-13-mavericks"><h3> Mavericks Lab </h3>
-                <p> An applied research accelerator for AI driven science.  </p>
-                </a>
+
+                <div>
+                    <a class="project-link" href="#secondary-13-mavericks">
+                      <h3> Mavericks Lab </h3>
+                    <p> An applied research accelerator for AI driven science.  </p>
+                  </a>
+                </div>
+
             </div>
 
             <div class="section-content">
-                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp; ...And machine intelligence can be used to mine vast quantities of astronomical data for new discoveries </h1>
+                <h1 class="wow fadeInUp story" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
+                <span class="text-small">...And </span>
+                <span class="text-medium">machine intelligence </span>
+                <span class="text-small">can be used to mine vast quantities of </span>
+                <span class="text-medium">astronomical data for new discoveries </span>
+                </h1>
             </div>
         </section>
 
@@ -259,65 +357,47 @@
             <div class="content part2 how-we-work">
                 <div>
                     <h1 class="" > How We Work </h1>
+
                     <p>
-                        We are a technology company which develops innovative technologies and services in the areas of where we believe to be the fundamental Grand Challanges of this era:
-                        Ocean, Climate, and Space.
+                        We are a systems technology company which develops innovative technologies and services in the areas where we believe to be the fundamental Grand Challanges of this era:
                     </p>
                     <p>
-                        These Grand Challenges include space exploration and colonization, climate change monitoring and mitigation, as well as ocean exploration, colonization, and conservation. Trillium is a "mission oriented" company, meaning that everything that we build is built with a specific Mission objective in mind.
+                        OCEAN | CLIMATE | SPACE
                     </p>
                     <p>
-                        Key to Trillium's approach in tackling these challenges is it's own expertise in System Design and Systems Intelligence as well it's strong partnership network.
+                        These Grand Challenges include space exploration and colonization, climate change monitoring and mitigation, as well as ocean conservation, exploration, and colonization.
+                    </p>
+                    <p>
+                        At the heart of how we work is Trillium's “Mission Oriented" approach.  Every system we build is built with a specific Mission objective in mind.   Whether it's a system to bring together <a href="#">Machine Learning experts and Planetary Scientists for planetary defense</a> or building an embedded <a href="#">Artificial Intelligence for ocean conservation and monitoring</a>, there's always a specific mission which drives us.
+                    </p>
+                    <p>
+                        We don't do it alone.  Part of our methodology requires that there's always one or more <a href="#">Mission Partners</a> who we work with to tackle these grand challenges.  In doing so we match our own expertise and passion in System Design and Systems Intelligence to the resources and objectives of a strong partnership network.
+                    </p>
+                    <p>
+                        For more information on working with Trillium, <a href="#">go here</a>.
+
                     </p>
                 </div>
             </div>
 
 
-            <div class="pure-g team">
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>Jordan McRae</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-jordan.png"/>
-                </div>
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>James Parr</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-james.png"/>
-                </div>
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>Anchal Bassi</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-anchal.png"/>
-                </div>
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>Eleanor Harding</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-eleanor.png"/>
-                </div>
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>Jon Rushton</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-jon.png"/>
-                </div>
-                <div class="pure-u-1-3 astro-holder">
-                    <div class="team-member">
-                        <h4>Leo Silverberg</h4>
-                    </div>
-                    <img class="astronaut" src="img/astro-leo.png"/>
-                </div>
-            </div>
 
+            <h2>
+                We take a mission-centered approach, partnering with organisations interested in solving systemic problems and opportunities.
+            </h2>
+            <h2>
+                For more information on working with Trillium, <a href="#">go here</a>.
+            </h2>
 
 
             <div class="pure-g relationships">
 
 
+
+
+
                 <!-- row 1 -->
+
                 <div class="pure-u-1-6">
                     <div class="plus TL"></div>
                     <div class="plus TR"></div>
