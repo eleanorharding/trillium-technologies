@@ -19,11 +19,12 @@ $('.project-link').bind('click',function(event){
       $rightAnchor = $(this).attr('href');
 
       /*SCROLLIN' */
-      $('html, body').animate({
-          scrollLeft: $($rightAnchor).offset().left
-      }, 500);
+
        $('html, body').animate({
-           scrollTop: $($rightAnchor).offset().top - 45
+           scrollTop: $($rightAnchor).offset().top-45
+       }, 500);
+       $('html, body').animate({
+           scrollLeft: $($rightAnchor).offset().left+20
        }, 500);
 
 
@@ -31,7 +32,7 @@ $('.project-link').bind('click',function(event){
          event.preventDefault();
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
-       timeout = window.setTimeout(setHash, 1000);
+      //  timeout = window.setTimeout(setHash, 1000);
        $('html').css('overflowY', 'hidden');
 
 

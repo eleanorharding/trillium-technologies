@@ -595,6 +595,7 @@ section.secondary {
   height: 950px; /* Default secondary height, set precise h in spec. class */
   /*border:2px solid white;*/
   color:white;
+  margin-top:50px;
 
 }
 
@@ -669,7 +670,7 @@ section#secondary-13-mavericks{
 
 .secondary-project-title img{
   margin-top:25px;
-  margin-left:35px;
+  margin-left:32%;
 
 }
 
@@ -722,7 +723,7 @@ section#secondary-13-mavericks{
 
 }
 .stats{
-  padding-top:30px;
+  padding-top:20px;
   margin-left:30px;
 }
 .statbox{
@@ -765,7 +766,7 @@ section#secondary-13-mavericks{
 
 .mission-partners{
   /*text-align:center;*/
-  margin-top:40px;
+  margin-top:30px;
 }
 
 .mission-partners img{
@@ -803,13 +804,15 @@ section#secondary-13-mavericks{
 .gallery{
   position:absolute;
   z-index:0;
+  width:inherit;
+  overflow:hidden;
 
 
 }
 
 .secondary-project-gallery a{
   position:absolute;
-  left:93%;
+  left:96%;
   margin-top:10px;
   z-index:111;
 
@@ -833,7 +836,8 @@ section#secondary-13-mavericks{
 
 .gallery-thumbs{
 
-  position:absolute;
+  position:relative;
+  top:83%;
   bottom:50px;
   left:50px;
   /*top:-100px;*/
@@ -1084,6 +1088,11 @@ p.copyright {
     letter-spacing: 2px;
 }
 
+.team-member h5{
+  color:rgba(255,255,255,0.5);
+  margin-top:-20px;
+}
+
 .astro-holder:nth-child(1) .team-member {
     right: 20%;
 }
@@ -1111,9 +1120,34 @@ p.copyright {
 }
 
 .contact-us h3, .contact-us p {
-    color: #ddd;
+    color: rgba(255,255,255,0.8);
 }
 
+.contact-us h3{
+  font-family:"Ailerons";
+    color: rgba(255,255,255,1);
+  font-size:2.2em;
+  font-weight:200;
+  /*margin-top:0px;*/
+  margin-bottom:-15px;
+  letter-spacing:1px;
+
+
+}
+
+.contact-us p{
+font-size:1.3em;
+}
+.contact-us img{
+  width:45px;
+  margin:15px;
+  margin-top:0;
+  margin-left:0;
+}
+
+.contact-us img:hover{
+  opacity:0.8;
+}
 
 /* ==========================================================================
    Helper classes
