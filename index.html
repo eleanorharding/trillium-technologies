@@ -22,7 +22,8 @@
         <![endif]-->
 
         <header>
-            <a href="http://localhost/git/trillium-technologies/#"><img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
+            <a href="http://localhost/git/trillium-technologies/#" class="trillium-logo-main-container"><img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
+            <!-- <img src="img/logo-bg.png" class="logo-bg"/> -->
             <ul class="main-navigation">
                 <li> <a href="#">Missions</a> 
                     <ul class="sub-nav">
@@ -39,14 +40,15 @@
                 </li>
                 <li> <a href="#">About</a>
                     <ul class="sub-nav">
-                        <li> <a href="#">How we work</a>  </li>
+                        <li> <a href="#how-we-work">How we work</a>  </li>
+                        <li> <a href="#partners">Partners </a> </li>
                         <li> <a href="team">Team</a>  </li>
                         <li> <a href="contact">Contact Us</a>  </li>
                     </ul>
                 </li>
                 <li>
                     <div class="nav-CTA">
-                        <a href="#" > Work With Us </a>
+                        <a href="work-with-us" > Work With Us </a>
                     </div>
                 </li>
             </ul>
@@ -92,7 +94,7 @@
                     <p> The first whisky glass engineered and tested in Microgravity </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594;</p>
                 </div>
             </div>
 
@@ -115,7 +117,7 @@
                     <p> A modular electronics system enabling customized devices that clip together. </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -167,7 +169,7 @@
                     <p> A self-contained deployable Fablab facility for building open hardware technologies to enable citizen science across the globe. </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -177,7 +179,7 @@
                     <p> An Automated Robotic Observatory (ARO) developed for amateurs to help identify and characterize Near Earth Asteroids. </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -191,7 +193,7 @@
                     <p> A robust rapid deployment smart energy microgrid for disaster response. </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -228,7 +230,7 @@
                     </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -251,7 +253,7 @@
                     <p> The Planetary Health Index (PHI) is a platform for measuring and assessing the ecological health of nature - AKA -natural capital - enabling better stewardship of our planet.  </p>
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -275,7 +277,7 @@
 
                 </div>
                 <div>
-                    <p> MORE > </p>
+                    <p> VIEW PROJECT &#8594; </p>
                 </div>
             </div>
 
@@ -296,7 +298,9 @@
                     <h3> Mavericks Lab </h3>
                     <p> An applied research accelerator for AI driven science.  </p>
                 </div>
-
+                <div>
+                    <p> VIEW PROJECT &#8594; </p>
+                </div>
             </div>
 
             <div class="section-content">
@@ -316,7 +320,7 @@
                 </div>
             </div>
 
-            <div class="content part2 how-we-work">
+            <div class="content part2 how-we-work" id="how-we-work">
                 <div>
                     <h1 class="" > How We Work </h1>
                     <p>  
@@ -342,14 +346,18 @@
 
 
 
-            <div class="pure-g relationships">
+            <div class="pure-g relationships" id="partners">
 
-                <h2> 
-                    We take a mission-centered approach, partnering with organisations interested in solving systemic problems and opportunities. 
-                </h2>
-                <h2>
-                    For more information on working with Trillium, <a href="#">go here</a>. 
-                </h2> 
+                <div>
+                    <h2> 
+                        We take a mission-centered approach, partnering with organisations interested in solving systemic problems and opportunities. 
+                    </h2>
+                    <h2>
+                        For more information on working with Trillium, <a href="#">go here</a>. 
+                    </h2> 
+                    <br/>
+                    <br/>
+                </div>
 
 
                 <!-- row 1 -->     
@@ -584,8 +592,12 @@
                 
 
                 setTimeout(function(){
-                    $('#preloader').toggleClass('preloader-complete');
+                   $('#preloader').toggleClass('preloader-complete'); 
                 }, 2000);
+
+                setTimeout(function(){
+                   $('#preloader').toggleClass('hide-preloader'); 
+                }, 4000);
             });
         </script>
 

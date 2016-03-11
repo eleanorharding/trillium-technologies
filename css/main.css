@@ -259,6 +259,10 @@ header {
     opacity: 0;
 }
 
+#preloader.hide-preloader {
+    display: none;
+}
+
 #preloader * {
     margin: 0 auto;
     text-align: center;
@@ -270,8 +274,7 @@ header {
 }
 
 .trillium-logo-main {
-    width: 100px;
-    padding: 10px;
+    width: 200px;
 }
 
 ul.main-navigation {
@@ -344,6 +347,10 @@ section.main {
 
 div.section-content {
     position: absolute;
+}
+
+.relationships h2 {
+    display: block;
 }
 
 div.section-content {
@@ -454,6 +461,11 @@ div.section-content.health-of-an-ecosystem-text {
     background-color: rgba(30,30,30,0.87);
 }
 
+.logo-bg {
+    position: absolute;
+    left: 0;
+}
+
 .nav-CTA {
     padding: 15px;
     background-color: #3481c5;
@@ -557,6 +569,31 @@ div.section-content.health-of-an-ecosystem-text {
     text-align: right;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
+    font-size: 0.7em;
+}
+
+div.space-glass-badge div:nth-child(2) {
+    background-color: #483439;
+}
+
+div.dropfab-badge div:nth-child(2) {
+    background-color: #3E4F6B;
+}
+
+div.fuelpod-badge div:nth-child(2) {
+    background-color: #911D18;
+}
+
+div.octotalk-badge div:nth-child(2) {
+    background-color: #1D284B;
+}
+
+div.phi-badge div:nth-child(2) {
+    background-color: #5579A8;
+}
+
+div.osa-badge div:nth-child(2) {
+    background-color: #222;
 }
 
 .project-badge div:nth-child(2):hover {
