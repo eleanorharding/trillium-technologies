@@ -231,6 +231,44 @@ header {
     z-index: 1000;
 }
 
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20,1);
+    z-index: 10000;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+#preloader > div {
+    position: relative;
+    height: 100%;
+}
+
+#preloader > div > div.preloader-content {
+    position: absolute;
+    top: 40%;
+    height: 100%;
+    width: 100%;
+} 
+
+#preloader.preloader-complete * {
+    opacity: 0;
+}
+
+#preloader * {
+    margin: 0 auto;
+    text-align: center;
+    transition: opacity 0.2s ease-out;
+}
+
+#preloader.preloader-complete {
+    opacity: 0;
+}
+
 .trillium-logo-main {
     width: 100px;
     padding: 10px;

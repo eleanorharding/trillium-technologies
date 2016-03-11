@@ -52,6 +52,16 @@
             </ul>
         </header>
 
+        <section id="preloader">
+            <div>
+                <!-- <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div> -->
+                <div class="preloader-content">
+                    <img src="img/ring.gif"/>
+                </div>
+            </div>
+        </section>
+
         <section class="main section-1-moon">
             <img class="sectionBG" src="img/section-1-moon.jpg"/>
             <div class="section-content" id="top-section">
@@ -563,9 +573,20 @@
 
         <!-- janky click function to bring up overlay mock -->
         <script type="text/javascript">
+
             function showUltrascopeOverlay() {
                 $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
             }
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+
+                setTimeout(function(){
+                    $('#preloader').toggleClass('preloader-complete');
+                }, 2000);
+            });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
