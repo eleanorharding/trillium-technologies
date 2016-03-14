@@ -36,12 +36,33 @@ $('.project-link').bind('click',function(event){
        $('html').css('overflowY', 'hidden');
        console.log($(window).width());
 
-
-
-
-
  });
 
+ $('.inter-project').bind('click',function(event){
+
+       /*stores the scroll position before moving to the page */
+       storedScrollPos = $(window).scrollTop();
+
+       /*Fetch the right anchor name */
+       $rightAnchor = $(this).attr('href');
+
+       /*SCROLLIN' */
+
+        $('html, body').animate({
+            scrollTop: $($rightAnchor).offset().top-45
+        }, 500);
+
+
+
+        /* Stops the anchor from jumping directly to the spot*/
+          event.preventDefault();
+
+       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
+       //  timeout = window.setTimeout(setHash, 1000);
+        $('html').css('overflowY', 'hidden');
+        console.log($(window).width());
+
+  });
 /*going from the project side */
  $('.project-scroll-back').bind('click',function(event){
 

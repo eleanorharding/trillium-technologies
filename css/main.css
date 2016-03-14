@@ -761,13 +761,14 @@ section#secondary-13-mavericks{
   height:inherit;
   background-color: #fff;
   display:inline-block;
+  text-align: center;
   /*margin:0;
   padding:0;*/
 }
 
 .secondary-project-title img{
-  margin-top:25px;
-  margin-left:32%;
+  margin-top:50px;
+  /*margin-left:32%;*/
 
 }
 
@@ -910,12 +911,26 @@ section#secondary-13-mavericks{
 
 }
 
-.secondary-project-gallery a{
+.project-scroll-back {
   position:absolute;
   left:96%;
   margin-top:10px;
   z-index:111;
 
+}
+.project-next{
+
+position:relative;
+
+}
+.project-nav{
+  margin-left:20px;
+  position:absolute;
+
+margin-bottom:0px;
+margin-top:850px;
+
+  text-align:center;
 }
 
 .secondary-project-gallery a:hover{
