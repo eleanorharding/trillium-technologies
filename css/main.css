@@ -255,7 +255,7 @@ header {
     top: 40%;
     height: 100%;
     width: 100%;
-} 
+}
 
 #preloader.preloader-complete * {
     opacity: 0;
@@ -902,7 +902,10 @@ section#secondary-13-mavericks{
   position:absolute;
   z-index:0;
   width:inherit;
+  height:inherit;
   overflow:hidden;
+  background-size: cover;
+  display:none;
 
 
 }
@@ -945,7 +948,7 @@ section#secondary-13-mavericks{
   margin:10px;
 }
 .gallery-thumbs li img{
-  width:100px;
+
   z-index:100;
 }
 
@@ -1257,7 +1260,7 @@ font-size:1.3em;
 }
 
 div.designers-and-engineers-container {
-    
+
 }
 
 #partners h2 {

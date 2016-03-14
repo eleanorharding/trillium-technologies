@@ -74,15 +74,35 @@ $( ".statnumber" ).each(function() {
 });
 
 /*gallery*/
-$('*[class^="thumb"]').bind('click',function(event){
+/* poplutating the gallery based on the classes and their numbers */
+/* Setting the gallery image as bg and then hiding it means that the browser wont load it until we need it*/
+$("[class*='galleryimg']").each(function(index) {
+  console.log( index + " Counting");
   var fullname = $(this).attr('class');
   var arr = fullname.split('-');
-  var number = arr[1];
+  var album = arr[1];
+  var slide = arr[2];
+  var imageurl = "img/projects/"+album+"/slide"+slide+".jpg";
 
-  $('.gallery-1').css("display", "none");
-  $('.gallery-2').css("display", "none");
-  $('.gallery-3').css("display", "none");
-  $('.gallery-'+number).css("display", "block");
+  $(this).css('background-image',  'url(' + imageurl +')');
+  if (slide == 1){
+    $(this).css('display', 'block');
+  }
+});
+
+/*Connecting the thumbs to the galler images*/
+$('[class^="thumb"]').bind('click',function(event){
+  var fullname = $(this).attr('class');
+  var arr = fullname.split('-');
+  var slide = arr[2];
+  var album = arr[1];
+
+
+  $("[class*='galleryimg']").each(function(index) {
+    $(this).css('display', 'none');
+  });
+  $('.galleryimg-'+album+"-"+slide).css("display", "block");
+
   console.log(number);
 });
 
@@ -90,4 +110,6 @@ $('*[class^="thumb"]').bind('click',function(event){
 
 $( document ).ready(function() {
     $('header').css('width', $(window).width())
+
+
 });
