@@ -442,7 +442,7 @@ div.part2 div {
 }
 
 .scuba-divers {
-    max-width:70%;
+    max-width:60%;
     left: 5%;
     top:5%;
 }
@@ -673,12 +673,12 @@ div.osa-badge div:nth-child(2) {
 
 #ultrascope {
     position: relative;
-    top: -600px;
+    top: -650px;
 }
 
 #fuelpod {
     position: relative;
-    top: -600px;
+    top: -550px;
 }
 
 .fuelpod-badge {
@@ -702,7 +702,7 @@ div.osa-badge div:nth-child(2) {
 }
 
 .mavericks-lab-badge {
-    top: 64%;
+    top: 68%;
     right: 1%;
 }
 
@@ -750,6 +750,7 @@ div.onscreen {
 
 .relationships img {
     max-width: 200px;
+    width: 100%;
 }
 
 .relationships > div {
@@ -827,6 +828,7 @@ h1.future-where-text {
     font-style: italic;
     opacity: 0.6;
 }
+
 
 div.section-content.explore-monitor-protect-text {
     top: 90%;
