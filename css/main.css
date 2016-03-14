@@ -230,6 +230,7 @@ header {
     background-color: #111;
     width: 100%;
     z-index: 1000;
+
 }
 
 .trillium-logo-main {
@@ -586,6 +587,7 @@ div.section-content.health-of-an-ecosystem-text {
     width:100%;
     margin-left:0;
     padding-right:0;
+    background-color:#111;
 
 
 }

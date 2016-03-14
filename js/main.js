@@ -34,6 +34,7 @@ $('.project-link').bind('click',function(event){
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
       //  timeout = window.setTimeout(setHash, 1000);
        $('html').css('overflowY', 'hidden');
+       console.log($(window).width());
 
 
 
@@ -58,6 +59,7 @@ $('.project-link').bind('click',function(event){
          $rightAnchor = " ";
          timeout = window.setTimeout(setHash, 1000);
          $('html').css('overflowY', 'auto');
+         console.log($(window).width());
   });
 
 
@@ -82,4 +84,10 @@ $('*[class^="thumb"]').bind('click',function(event){
   $('.gallery-3').css("display", "none");
   $('.gallery-'+number).css("display", "block");
   console.log(number);
+});
+
+
+
+$( document ).ready(function() {
+    $('header').css('width', $(window).width())
 });
