@@ -364,9 +364,12 @@
         </section>
 
         <section class="starshine">
-            <div class="content part2">
+            <div class="content part2 designers-and-engineers-container">
                 <div>
-                    <h1 class="" > We're a team of designers and engineers dedicated to developing technology platforms that tackle grand challenges </h1>
+
+                    <h1 class="designers-and-engineers" >
+                        We're a team of designers and engineers dedicated to developing technology platforms that tackle grand challenges
+                    </h1>
                 </div>
             </div>
 
@@ -377,7 +380,7 @@
                     <p>
                         We are a systems technology company which develops innovative technologies and services in the areas where we believe to be the fundamental Grand Challanges of this era:
                     </p>
-                    <p>
+                    <p class="ocean-climate-space">
                         OCEAN | CLIMATE | SPACE
                     </p>
                     <p>
@@ -389,10 +392,8 @@
                     <p>
                         We don't do it alone.  Part of our methodology requires that there's always one or more <a href="#">Mission Partners</a> who we work with to tackle these grand challenges.  In doing so we match our own expertise and passion in System Design and Systems Intelligence to the resources and objectives of a strong partnership network.
                     </p>
-                    <p>
-                        For more information on working with Trillium, <a href="#">go here</a>.
-
-                    </p>
+                    <br/>
+                    <a href="#"  class="work-with-us-CTA"> Work With Us </a>
                 </div>
             </div>
 
@@ -1407,9 +1408,6 @@
         <!-- janky click function to bring up overlay mock -->
         <script type="text/javascript">
 
-            function showUltrascopeOverlay() {
-                $( "div#ultrascope-overlay" ).toggleClass( "onscreen" );
-            }
 
             //Konami code
             $( window ).konami({
@@ -1426,11 +1424,11 @@
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('preloader-complete');
-                }, 2000);
+                }, 200);
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('hide-preloader');
-                }, 4000);
+                }, 400);
             });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
