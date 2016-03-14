@@ -119,7 +119,7 @@ $('[class^="thumb"]').bind('click',function(event){
   var album = arr[1];
 
 
-  $("[class*='galleryimg']").each(function(index) {
+  $("[class*='galleryimg-"+album+"']").each(function(index) {
     $(this).css('display', 'none');
   });
   $('.galleryimg-'+album+"-"+slide).css("display", "block");
