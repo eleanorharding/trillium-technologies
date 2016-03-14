@@ -103,12 +103,12 @@ html {
 
 @font-face {
     font-family: 'ailerons';
-    src: url('../fonts/ailerons-typeface-webfont.eot');
-    src: url('../fonts/ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ailerons-typeface-webfont.woff2') format('woff2'),
-         url('../fonts/ailerons-typeface-webfont.woff') format('woff'),
-         url('../fonts/ailerons-typeface-webfont.ttf') format('truetype'),
-         url('../fonts/ailerons-typeface-webfont.svg#aileronsregular') format('svg');
+    src: url('../fonts/ailerons/ailerons-typeface-webfont.eot');
+    src: url('../fonts/ailerons/ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.woff2') format('woff2'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.woff') format('woff'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.ttf') format('truetype'),
+         url('../fonts/ailerons/ailerons-typeface-webfont.svg#aileronsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -287,7 +287,7 @@ ul.main-navigation {
 ul.main-navigation > li > a {
     padding-left: 15px;
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
     letter-spacing: 4px;
     opacity: 0.7;
     padding: 15px;
@@ -303,7 +303,7 @@ ul.sub-nav {
     list-style-type: none;
     padding-left: 0px;
     background-color: #000;
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin-top: 12px;
     
 }
@@ -403,6 +403,26 @@ div.part2 div {
     color: #ccc;
     padding: 20px;
     padding-bottom: 50px;
+    text-align: center;
+}
+
+.how-we-work p {
+
+}
+
+.work-with-us-CTA {
+    background-color: #3481c5;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 20px;
+
+}
+
+.ocean-climate-space {
+    font-weight: 800;
+    color: #3481c5;
 }
 
 .section-1-moon div.section-content {
@@ -911,6 +931,52 @@ p.copyright {
 .contact-us h3, .contact-us p {
     color: #ddd;
 }
+
+.designers-and-engineers {
+    font-size: 2.5em;
+    margin: .4em 0;
+    border-top: 3px dotted #333;
+    border-bottom: 3px dotted #333;
+    padding: 100px 0px;
+    /*font-family: robotolight;*/
+}
+
+div.designers-and-engineers-container {
+    
+}
+
+#partners h2 {
+    color: rgba(255,255,255,0.87);
+    font-family: 'ailerons';
+}
+
+@-webkit-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-moz-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-o-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+
+.scuba-divers {
+    -webkit-animation: diverBob 6s infinite; /* Safari 4+ */
+    -moz-animation:    diverBob 6s infinite; /* Fx 5+ */
+    -o-animation:      diverBob 6s infinite; /* Opera 12+ */
+    animation:         diverBob 6s infinite; /* IE 10+, Fx 29+ */
+
+    animation-timing-function: ease;
+}
+
+
 
 
 /* ==========================================================================
