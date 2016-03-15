@@ -81,7 +81,100 @@
     }
 
 
+#loading-line {
+    width:100%;
+    height:5px;
+    background-color:#00F;
+}
 
+#loading-percent {  
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    right: 48%;
+}
+
+#myBar {
+    width:100%;
+    height:5px;
+    background-color: darkturquoise;
+}
+
+#label {
+    color: #fff;
+    top: 125px;
+    position: relative;
+    font-size: 2em;
+}
+
+#myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+}
+
+#myBar {
+  position: absolute;
+}
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+    
+/*
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background-color: #111;
+    z-index: 1000;
+    
+    transition: height 1s ease; 
+*/
+}
+
+/*
+.pace-inactive {
+    height: 0%;
+}
+*/
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+    position: fixed;
+    z-index: 20000;
+    top: 5%;
+    right: 2%;
+    height: 200px;
+    width: 200px;
+
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -ms-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+/*    background-image: url('../img/ring.gif');*/
+}
+
+.pace .pace-progress:after {
+  display: block;
+    position: relative;
+    top: 70px;
+    content: attr(data-progress-text);
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    font-size: 3.8rem;
+    line-height: 1;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.19999999999999996);
+}
 
 html {
     color: #222;
@@ -236,9 +329,9 @@ header {
 #preloader {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background-color: rgba(20,20,20,1);
-    z-index: 10000;
+    z-index: 1000;
     text-align: center;
     margin: 0 auto;
     opacity: 1;
@@ -252,8 +345,10 @@ header {
 
 #preloader > div > div.preloader-content {
     position: absolute;
-    top: 40%;
+    top: 5%;
+    right: 2%;
     height: 100%;
+    text-align: right;
     width: 100%;
 }
 
@@ -1743,4 +1838,149 @@ div.content.part2.designers-and-engineers-container div {
     h3 {
         page-break-after: avoid;
     }
+}
+
+@media screen and (min-width: 1920px) {
+    .partners-heading {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .bsquare-box {
+        left: -300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-2-ISS {
+        min-height: 550px;
+    }
+    .section-3-BSQ {
+        min-height: 580px;
+    }
+    .section-4-horizon {
+        min-height: 400px;
+    }
+    .section-5-village {
+        min-height: 750px;
+    }
+    .section-6-shore {
+        min-height: 600px;
+    }
+    .section-7-underwater {
+        min-height: 600px;
+    }
+    .section-8-coast {
+        min-height: 600px;
+    }
+    .section-9-atmosphere {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bsquare-box {
+        left: -500px;
+    }
+    .section-2-ISS {
+        min-height: 440px;
+    }
+    .section-3-BSQ {
+        min-height: 400px;
+    }
+    .section-4-horizon {
+        min-height: 280px;
+    }
+    .section-5-village {
+        min-height: 560px;
+    }
+    .section-6-shore {
+        min-height: 430px;
+    }
+    .section-7-underwater {
+        min-height: 430px;
+    }
+    .section-8-coast {
+        min-height: 430px;
+    }
+    .section-9-atmosphere {
+        min-height: 420px;
+    }
+    .building-a-future {
+        width: 300px;
+    }
+    .section-1-moon div.section-content {
+        top: 50%;
+    }
+    .space-glass-circle {
+        width: 35%;
+    }
+    div.section-content#whisky-in-space {
+        top: 30%;
+    }
+    .b-square-circle {
+        width: 35%;
+    }
+    .story {
+        max-width: 80%;
+    }
+    .text-medium {
+        font-size: 1.3em;
+    }
+    .text-small {
+        margin: 10px 0px 2px 0px;
+    }
+    div.section-content.fuelpod-ultrascope-text {
+        top: 97%;
+    }
+    .osa-badge {
+        top: 55%;
+        right: 1%;
+    }
+    div.section-content.where-everyone-text {
+        top: 40%;
+    }
+    .project-badge h3 {
+        letter-spacing: 0px;
+        font-size: 1.4em;
+    }
+    .asteroid {
+        width: 270px;
+    }
+    .asteroid-box {
+        top: 10%;
+    }
+    .section-content.mavericks-lab-text {
+        top: 45%;
+    }
+    div.part2 div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 425px) {
+    .ul.sub-nav {
+        display: block;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    
+}
+
+@media screen and (min-width: 320px) {
+    
 }
