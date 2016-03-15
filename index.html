@@ -17,6 +17,17 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+
+        <section id="preloader">
+            <div>
+                <!-- <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div> -->
+                <div class="preloader-content">
+                    <img src="img/ring.gif"/>
+                    <p> Loading </p>
+                </div>
+            </div>
+        </section>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -56,15 +67,7 @@
             </ul>
         </header>
 
-        <section id="preloader">
-            <div>
-                <!-- <div class="loader-section section-left"></div>
-                <div class="loader-section section-right"></div> -->
-                <div class="preloader-content">
-                    <img src="img/ring.gif"/>
-                </div>
-            </div>
-        </section>
+
 
         <section class="main section-1-moon">
             <img class="sectionBG" src="img/section-1-moon.jpg"/>
@@ -215,6 +218,7 @@
 
             </div>
 
+
             <div class="overlay offscreen" id="ultrascope-overlay" onclick="showUltrascopeOverlay()">
                 <img src="img/overlays/ultrascope-overlay.jpg" />
             </div>
@@ -222,6 +226,7 @@
 
 
             <div id="fuelpod" class="project-badge fuelpod-badge wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
+
 
                 <div>
                     <h3> Fuelpod</h3>
@@ -325,9 +330,13 @@
 
                 </div>
                 <div>
+<<<<<<< HEAD
                   <a href="http://openspaceagency.com" target="blank">
                     <p>openspaceagency.com </p>
                   </a>
+=======
+                    <a href="http://openspaceagency.com" target="_blank"><p> VIEW PROJECT &#8594; </p></a>
+>>>>>>> origin
                 </div>
 
             </div>
@@ -367,9 +376,11 @@
 
                 </div>
                 <div>
+
                   <a href="http://maverickslab.org" target="blank">
                     <p> maverickslab.org </p>
                     </a>
+
                 </div>
             </div>
 
@@ -1529,12 +1540,14 @@
 
 
                 setTimeout(function(){
+
                    $('#preloader').toggleClass('preloader-complete');
-                }, 200);
+                }, 2000);
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('hide-preloader');
-                }, 400);
+                }, 4000);
+
             });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

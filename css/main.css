@@ -341,6 +341,120 @@ section.main img.sectionBG {
     width: 100%;
 }
 
+.section-1-moon {
+    min-height: 600px;
+}
+
+.section-2-ISS {
+    min-height: 800px;
+}
+
+.section-3-BSQ {
+    min-height: 800px;
+}
+
+.section-4-horizon {
+    min-height: 500px;
+}
+
+.section-5-village {
+    min-height: 1000px;
+}
+
+.section-6-shore {
+    min-height: 800px;
+}
+
+.section-7-underwater {
+    min-height: 800px;
+}
+
+.section-8-coast {
+    min-height: 800px;
+}
+
+.section-9-atmosphere {
+    min-height: 800px;
+}
+
+.padded {
+    padding-right: 40px;
+}
+
+.how-we-work-content h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.how-we-work-content h3 {
+    font-family: 'ailerons';
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+.how-we-work-content .skills {
+    margin: -3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.how-we-work-content .skills p {
+    padding: 10px;
+    margin: 15px;
+}
+
+.how-we-work-content .blue p {
+    background-color: #2257af;
+}
+
+.how-we-work-content .purple p {
+    background-color: #504c95;
+}
+
+.how-we-work-content .teal p {
+    background-color: #17889c;
+}
+
+.skillset {
+    margin: 50px 0px;
+}
+
+.skillset h2 {
+    text-align: center;
+    font-family: 'ailerons';
+}
+
+form.mission-form *{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+form.mission-form.pure-form input {
+    margin: 2px 0px 8px 0px;
+    font-size: 0.9em;
+    padding: 0.4em 0.6em;
+    color: #222;
+}
+
+form.pure-form.mission-form legend {
+    color: #fff;
+}
+
+form.mission-form button.pure-button.pure-button-primary {
+    font-size: 1em;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    background-color: #3481c5;
+}
+
+
+.main-content {
+    margin-top: 45px;
+}
 
 section.main {
     position: relative;
@@ -444,7 +558,7 @@ div.part2 div {
 }
 
 .scuba-divers {
-    max-width:70%;
+    max-width:60%;
     left: 5%;
     top:5%;
 }
@@ -675,13 +789,15 @@ div.osa-badge div:nth-child(2) {
 
 /*#ultrascope {
     position: relative;
-    top: -600px;
+    top: -650px;
 }
 
 #fuelpod {
     position: relative;
+<<<<<<< HEAD
     top: -600px;
 }*/
+
 
 .fuelpod-badge {
     bottom: 1%;
@@ -704,7 +820,7 @@ div.osa-badge div:nth-child(2) {
 }
 
 .mavericks-lab-badge {
-    top: 64%;
+    top: 68%;
     right: 1%;
 }
 
@@ -1061,6 +1177,7 @@ div.onscreen {
 
 .relationships img {
     max-width: 200px;
+    width: 100%;
 }
 
 .relationships > div {
@@ -1139,6 +1256,7 @@ h1.future-where-text {
     font-style: italic;
     opacity: 0.6;
 }
+
 
 div.section-content.explore-monitor-protect-text {
     top: 90%;
