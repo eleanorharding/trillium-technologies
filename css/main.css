@@ -339,6 +339,44 @@ section.main img.sectionBG {
     width: 100%;
 }
 
+.section-1-moon {
+    min-height: 600px;
+}
+
+.section-2-ISS {
+    min-height: 800px;
+}
+
+.section-3-BSQ {
+    min-height: 800px;
+}
+
+.section-4-horizon {
+    min-height: 500px;
+}
+
+.section-5-village {
+    min-height: 1000px;
+}
+
+.section-6-shore {
+    min-height: 800px;
+}
+
+.section-7-underwater {
+    min-height: 800px;
+}
+
+.section-8-coast {
+    min-height: 800px;
+}
+
+.section-9-atmosphere {
+    min-height: 800px;
+}
+
+
+
 
 section.main {
     position: relative;
