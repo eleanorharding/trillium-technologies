@@ -926,7 +926,7 @@ section#secondary-13-mavericks{
 
   background-color:#82BAB6;
   /*background-image:url(../img/projectBackground.jpg);*/
-  background-size:cover;
+  /*background-size:cover;*/
   /*width:66%;*/
   height:inherit;
   display:inline-block;
@@ -1007,10 +1007,11 @@ margin-top:850px;
 .gallery-thumbs{
 
   position:relative;
-  top:83%;
-  bottom:50px;
-  left:50px;
-  /*top:-100px;*/
+  top:85%;
+  bottom:20px;
+  left:25px;
+  float:right;
+  margin-right:25px;
 }
 .gallery-thumbs li{
   cursor:pointer;
@@ -1021,7 +1022,7 @@ margin-top:850px;
 .gallery-thumbs li img{
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-  height:80px;
+  height:70px;
   z-index:100;
 }
 
