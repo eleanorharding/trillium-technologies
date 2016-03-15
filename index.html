@@ -10,10 +10,13 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <script src="js/pace.min.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        
+        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -22,18 +25,49 @@
             <div>
                 <!-- <div class="loader-section section-left"></div>
                 <div class="loader-section section-right"></div> -->
+<!--                <div id="loading-line"></div>-->
+<!--
+                <div id="myBar">
+                  </div>
+-->
                 <div class="preloader-content">
+<!--                    <div id="label">0%</div>-->
                     <img src="img/ring.gif"/>
-                    <p> Loading </p>
+<!--                    <p> Loading </p>-->
+                    
+                    
                 </div>
             </div>
         </section>
+        
+        <script type="text/javascript">
+
+//                var elem = document.getElementById("myBar"); 
+//                var width = 10;
+//                var id = setInterval(frame, 40);
+//                function frame() {
+//                    if (width >= 96) {
+//                        clearInterval(id);
+//                    } else {
+//                        width++; 
+//                        elem.style.width = width + '%'; 
+//                        document.getElementById("label").innerHTML = width * 1 + '%';
+//                    }
+//                }
+            
+        
+        </script>
+        
+        
+                
+                
+                
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header>
-            <a href="http://localhost/git/trillium-technologies/#" class="trillium-logo-main-container"><img src="img/trillium-logo.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
+            <a href="http://localhost/git/trillium-technologies/#" class="trillium-logo-main-container"><img src="img/trillium-logo-header.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
             <!-- <img src="img/logo-bg.png" class="logo-bg"/> -->
             <ul class="main-navigation">
                 <li> <a href="#">Missions</a> 
@@ -599,18 +633,19 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.scrollme.min.js"></script>
-
+    
         <script type="text/javascript">
+            
+            
             $(document).ready(function() {
                 
-
                 setTimeout(function(){
                    $('#preloader').toggleClass('preloader-complete'); 
-                }, 2000);
+                }, 1500);
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('hide-preloader'); 
-                }, 4000);
+                }, 3000);
             });
         </script>
 
