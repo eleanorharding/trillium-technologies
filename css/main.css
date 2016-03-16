@@ -18,23 +18,9 @@
   user-select: none;
 
 
-/*
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: fixed;
-    background-color: #111;
-    z-index: 1000;
-
-    transition: height 1s ease;
-*/
-}
-
-/*
-.pace-inactive {
-    height: 0%;
 
 }
+
 
 .pace.pace-inactive .pace-progress {
   display: none;
@@ -53,9 +39,9 @@
     transform: translate3d(0, 0, 0) !important;
 /*    background-image: url('../img/ring.gif');*/
 
-
+}
 .pace .pace-progress:after {
-  display: block;
+   display: block;
     position: relative;
     top: 70px;
     content: attr(data-progress-text);
@@ -780,7 +766,6 @@ div.osa-badge div:nth-child(2) {
 
 #fuelpod {
     position: relative;
-<<<<<<< HEAD
     top: -600px;
 }*/
 
@@ -1012,7 +997,7 @@ section#secondary-13-mavericks{
 .stattext p{
   /*font-family:'ailerons';*/
     color:rgba(0,0,0,0.6);
-    font-size:1.2em;
+    font-size:1em;
     margin: -15px 0 0 20px;
 
     letter-spacing:1px;
@@ -1121,7 +1106,7 @@ margin-top:850px;
 
   position:relative;
   top:85%;
-  bottom:20px;
+  /*bottom:20px;*/
   left:25px;
   float:right;
   margin-right:25px;
@@ -1741,7 +1726,33 @@ div.content.part2.designers-and-engineers-container div {
 
 
 @media screen and (max-width: 1440px) {
+  .secondary-project-desc h1{
+    font-size:1em;
+  }
+  .secondary-project-desc h1:first-child{
+    margin-top:50px;
+  }
 
+  .secondary-project-desc p{
+    font-size:0.7em;
+  }
+  .statnumber{
+    width:35px;
+    height:35px;
+  }
+  .statnumber p{
+    font-size:1.6em;
+    letter-spacing:-2px;
+  }
+  .stattext p{
+    font-size:0.8em;
+  }
+  .mission-partners h1{
+    margin-top:10px !important;
+  }
+  .stats{
+    padding-top:5px;
+  }
 
 }
 
@@ -1769,6 +1780,12 @@ div.content.part2.designers-and-engineers-container div {
     }
     .stattext p{
       font-size:0.8em;
+    }
+    .mission-partners {
+      margin-top:10px !important;
+    }
+    .stats{
+      padding-top:5px;
     }
 
 }
@@ -1820,6 +1837,12 @@ div.content.part2.designers-and-engineers-container div {
     }
     .stattext p{
       font-size:0.6em;
+    }
+    .mission-partners h1{
+      margin-top:10px !important;
+    }
+    .stats{
+      padding-top:5px;
     }
 }
 
