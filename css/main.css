@@ -1157,6 +1157,7 @@ div.onscreen {
 .relationships {
     margin: 0px 70px;
     padding: 100px 0px;
+    text-align: center;
 }
 
 .relationships img {
@@ -1487,9 +1488,26 @@ div.content.part2.designers-and-engineers-container div {
     color: rgba(255,255,255,0.87);
 }
 
-#partners{
-  display:inline-block;
-  text-align: center;
+
+.hamburger {
+    position: absolute;
+    top: 8px;
+    right: 46px;
+    display: none;
+    right: 15px;
+}
+
+ul.main-navigation.hidden {
+    display: none;
+}
+
+.pure-u-1-6 {
+    min-width: 100px;
+}
+
+.pure-u-1-2 {
+    min-width: 400px;
+
 }
 
 @-webkit-keyframes diverBob {
@@ -1936,6 +1954,14 @@ div.content.part2.designers-and-engineers-container div {
         margin: 0 auto;
     }
 
+    .pure-u-1-6.extrafooter {
+        display: none;
+    }
+    .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
+        width:22%;
+    }
+
+
 }
 
 
@@ -1963,7 +1989,7 @@ div.content.part2.designers-and-engineers-container div {
         display: block;
     }
     ul.main-navigation {
-        margin-top: 40px;
+        margin-top: 0px;
         background-color: #000;
         padding: 0px;
     }
@@ -1982,10 +2008,195 @@ div.content.part2.designers-and-engineers-container div {
     .nav-CTA {
         margin-left: 0px;
     }
+    ul.main-navigation {
+
+    }
+    .building-a-future {
+        width: 180px;
+    }
+    .section-2-ISS {
+        min-height: 230px;
+    }
+    div.section-content#whisky-in-space {
+        top: 10%;
+    }
+    .future-animation {
+        /*        data-translatey="250";*/
+    }
+    .section-2-ISS {
+        min-height: 200px;
+    }
+    .section-3-BSQ {
+        min-height: 200px;
+    }
+    .section-4-horizon {
+        min-height: 130px;
+    }
+    .section-5-village {
+        min-height: 280px;
+    }
+    .section-6-shore {
+        min-height: 200px;
+    }
+    .section-7-underwater {
+        min-height: 180px;
+    }
+    .section-8-coast {
+        min-height: 200px;
+    }
+    .section-9-atmosphere {
+        min-height: 190px;
+    }
+    .designers-and-engineers {
+        font-size: 1.4em;
+        padding: 60px 0px;
+    }
+    div.part2 {
+        padding: 40px 0px;
+    }
+    .relationships {
+        margin: 0px 20px;
+        padding: 30px 0px;
+    }
+    .footer-trillium-logo {
+        max-width: 200px
+    }
+    .asteroid {
+        width: 170px;
+    }
+    .text-small {
+        font-size: 0.9em;
+    }
+    .text-medium {
+        font-size: 1em;
+        letter-spacing: 3px;
+    }
+    .project-badge p {
+        margin: 0px 2px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .bsquare-box {
+        left: -930px;
+    }
+    .project-badge div:nth-child(1) p {
+        display: none;
+    }
+    #bsquare {
+        z-index: 2000;
+        width: 60px;
+        height: 60px;
+    }
+    div.section-content.science-advanced-by-citizens {
+        top: 0%;
+    }
+    .fuelpod-ultrascope-text h1{
+        background-color: rgba(0,0,0,0.5);
+    }
+    div.section-content.fuelpod-ultrascope-text {
+        top: 105%;
+    }
+    div.section-content.explore-monitor-protect-text {
+        top: 80%;
+    }
+    div.section-content.health-of-an-ecosystem-text {
+        top: 33%;
+    }
+    .phi-badge {
+        top: 70%
+    }
+    .osa-badge {
+        top: 65%;
+    }
+    div.section-content.where-everyone-text {
+        top: 33%;
+    }
+    .asteroid-box {
+        top: 0%;
+    }
+    .section-content.mavericks-lab-text {
+        top: 30%;
+    }
+    .mavericks-lab-badge {
+        top: 80%;
+    }
+
+    .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
+        width:50%;
+    }
+    ul.main-navigation li:hover ul.sub-nav li a {
+        padding: 0px 15px;
+    }
+    div.pure-u-1-6 {
+        width: 33%;
+    }
+    .pure-u-1-2 {
+        min-width: 100%;
+    }
+    .project-badge div {
+        padding: 2px;
+    }
+    .project-badge {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    .project-badge:before, .project-badge:after, .project-badge div:after, .project-badge div:before {
+        height: 1px;
+        color: #ddd;
+    }
+    .project-badge div {
+        margin: 3px;
+    }
+
+
 }
 
 
 @media screen and (max-width: 375px) {
+
+    .bsquare-box {
+        left: -1000px;
+    }
+    .section-2-ISS {
+        min-height: 180px;
+    }
+    .section-3-BSQ {
+        min-height: 180px;
+    }
+    .section-4-horizon {
+        min-height: 100px;
+    }
+    .section-5-village {
+        min-height: 240px;
+    }
+    .section-6-shore {
+        min-height: 180px;
+    }
+    .section-7-underwater {
+        min-height: 160px;
+    }
+    .section-8-coast {
+        min-height: 180px;
+    }
+    .section-9-atmosphere {
+        min-height: 170px;
+    }
+    .building-a-future {
+        width: 150px;
+    }
+    .text-small {
+        font-size: 0.8em;
+        margin: 0px;
+        letter-spacing: 1px;
+    }
+    .text-medium {
+        font-size: 0.9em;
+        letter-spacing: 2px;
+    }
+    .asteroid {
+        width: 116px;
+    }
 
 }
 
