@@ -992,7 +992,9 @@ section#secondary-13-mavericks{
   margin-top: -15px;
 
 }
-
+.shrink{
+  font-size:0.7em !important;
+}
 .stattext p{
   /*font-family:'ailerons';*/
     color:rgba(0,0,0,0.6);
@@ -1035,7 +1037,7 @@ section#secondary-13-mavericks{
 
   background-color:rgba(255,255,255,0.3);
   width: 50px;
-  height:950px;
+  height:100vh;
   z-index:10;
 }
 
@@ -1733,14 +1735,14 @@ div.content.part2.designers-and-engineers-container div {
 
 @media screen and (max-width: 1440px) {
   .secondary-project-desc h1{
-    font-size:1em;
+    font-size:0.8em;
   }
   .secondary-project-desc h1:first-child{
     margin-top:50px;
   }
 
   .secondary-project-desc p{
-    font-size:0.7em;
+    font-size:0.65em;
   }
   .statnumber{
     width:35px;
@@ -1759,6 +1761,13 @@ div.content.part2.designers-and-engineers-container div {
   .stats{
     padding-top:5px;
   }
+  .gallery-thumbs li img{
+    height:50px;
+  }
+  .mission-partners img{
+
+    max-width: 80px;
+  }
 
 }
 
@@ -1767,7 +1776,7 @@ div.content.part2.designers-and-engineers-container div {
         left: -300px;
     }
     .secondary-project-desc h1{
-      font-size:1em;
+      font-size:0.8em;
     }
     .secondary-project-desc h1:first-child{
       margin-top:50px;
@@ -1793,9 +1802,7 @@ div.content.part2.designers-and-engineers-container div {
     .stats{
       padding-top:5px;
     }
-    .gallery-thumbs li img{
-      height:50px;
-    }
+
 
 }
 
