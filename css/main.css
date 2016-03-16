@@ -1074,11 +1074,17 @@ position:relative;
 .project-nav{
   margin-left:20px;
   position:absolute;
+  height:inherit;
 
 margin-bottom:0px;
-margin-top:850px;
+
 
   text-align:center;
+    padding-top:700px;
+}
+
+.project-nav a{
+
 }
 
 .secondary-project-gallery a:hover{
@@ -1086,6 +1092,7 @@ margin-top:850px;
 }
 
 .secondary-project-gallery a{
+
   text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -1785,6 +1792,9 @@ div.content.part2.designers-and-engineers-container div {
     }
     .stats{
       padding-top:5px;
+    }
+    .gallery-thumbs li img{
+      height:50px;
     }
 
 }
