@@ -36,7 +36,7 @@
         <header>
             <a href="http://localhost/git/trillium-technologies/#" class="trillium-logo-main-container"><img src="img/trillium-logo-header.png" class="trillium-logo-main" alt="Trillium Technology"/></a>
             <!-- <img src="img/logo-bg.png" class="logo-bg"/> -->
-<!--            <img src=""/>-->
+            <div class="hamburger" onclick="toggleMenuVisibility()"><img src="img/menu.png" /></div>
             <ul class="main-navigation">
                 <li> <a href="#">Missions</a> 
                     <ul class="sub-nav">
@@ -66,8 +66,8 @@
                 </li>
             </ul>
         </header>
-
         
+                
 
         <section class="main section-1-moon">
             <img class="sectionBG" src="img/section-1-moon.jpg"/>
@@ -75,7 +75,7 @@
                 
                 <div class="scrollme">
                     <div
-                        class="animateme"
+                        class="animateme future-animation"
                         data-when="enter"
                         data-from="0.5"
                         data-to="1"
@@ -139,7 +139,7 @@
 
         <section class="main section-4-horizon" id="section-4-horizon">
             <img src="img/section-4-horizon.jpg" class="sectionBG"/>
-            <div class="section-content">
+            <div class="section-content science-advanced-by-citizens">
                 
                 <h1 class="wow fadeInUp story future-where-text" data-wow-delay="0.2s" data-wow-duration="1s"> &nbsp;
                     <span class="text-small">A future where </span>
@@ -535,7 +535,7 @@
 
                 </div>
             </div>
-            <div class="pure-u-1-6"></div>
+            <div class="pure-u-1-6 extrafooter"></div>
             <div class="pure-u-1-6 trillium-footer-missions">
                 <div>
                     <h3> Missions </h3> 
@@ -578,10 +578,22 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.scrollme.min.js"></script>
+        
+        <script type="text/javascript">
+            function toggleMenuVisibility() {
+                $('.main-navigation').toggleClass('hidden');
+            }
+            
+            if ($(window).width() < 500) {
+                $('.main-navigation').toggleClass('hidden');
+                $( ".future-animation" ).attr( "data-translatey", 20 );
+            }
+            
+            
+        </script>
+    
     
         <script type="text/javascript">
-            
-            
             $(document).ready(function() {
                 
                 setTimeout(function(){
