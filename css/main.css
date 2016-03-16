@@ -10,6 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+<<<<<<< HEAD
 #loader-wrapper .loader-section {
         position: fixed;
         top: 0;
@@ -119,6 +120,9 @@
 #myBar {
   position: absolute;
 }
+=======
+
+>>>>>>> origin
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -126,6 +130,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+<<<<<<< HEAD
 
 /*
     width: 100%;
@@ -142,8 +147,9 @@
 /*
 .pace-inactive {
     height: 0%;
+=======
+>>>>>>> origin
 }
-*/
 
 .pace.pace-inactive .pace-progress {
   display: none;
