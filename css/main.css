@@ -1020,7 +1020,7 @@ section#secondary-13-mavericks{
   /*position:absolute;
   left:36.7%;*/
 
-  background-color:#82BAB6;
+  background-color:#4a7395;
   /*background-image:url(../img/projectBackground.jpg);*/
   /*background-size:cover;*/
   /*width:66%;*/
@@ -1074,7 +1074,7 @@ position:relative;
 
 }
 .project-nav{
-  margin-left:20px;
+  /*margin-left:20px;
   position:absolute;
   height:inherit;
 
@@ -1082,7 +1082,8 @@ margin-bottom:0px;
 
 
   text-align:center;
-    padding-top:700px;
+    padding-top:700px;*/
+    float:bottom;
 }
 
 .project-nav a{
