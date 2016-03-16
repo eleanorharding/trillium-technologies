@@ -830,6 +830,7 @@ div.onscreen {
 .relationships {
     margin: 0px 70px;
     padding: 100px 0px;
+    text-align: center;
 }
 
 .relationships img {
@@ -1136,11 +1137,9 @@ ul.main-navigation.hidden {
     display: none;
 }
 
-/*
 .pure-u-1-6 {
     min-width: 100px;
 }
-*/
 
 .pure-u-1-2 {
     min-width: 400px;
@@ -1496,6 +1495,12 @@ ul.main-navigation.hidden {
         width: 80%;
         margin: 0 auto;
     }
+    .pure-u-1-6.extrafooter {
+        display: none;
+    }
+    .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
+        width:22%;
+    }
     
 }
 
@@ -1522,7 +1527,7 @@ ul.main-navigation.hidden {
         display: block;
     }
     ul.main-navigation {
-        margin-top: 40px;
+        margin-top: 0px;
         background-color: #000;
         padding: 0px;
     }
@@ -1556,26 +1561,29 @@ ul.main-navigation.hidden {
     .future-animation {
         /*        data-translatey="250";*/
     }
+    .section-2-ISS {
+        min-height: 200px;
+    }
     .section-3-BSQ {
-        min-height: 230px;
+        min-height: 200px;
     }
     .section-4-horizon {
-        min-height: 160px;
+        min-height: 130px;
     }
     .section-5-village {
-        min-height: 321px;
+        min-height: 280px;
     }
     .section-6-shore {
-        min-height: 240px;
+        min-height: 200px;
     }
     .section-7-underwater {
-        min-height: 220px;
+        min-height: 180px;
     }
     .section-8-coast {
-        min-height: 230px;
+        min-height: 200px;
     }
     .section-9-atmosphere {
-        min-height: 220px;
+        min-height: 190px;
     }
     .designers-and-engineers {
         font-size: 1.4em;
@@ -1598,7 +1606,8 @@ ul.main-navigation.hidden {
         font-size: 0.9em;
     }
     .text-medium {
-        font-size: 1.2em;
+        font-size: 1em;
+        letter-spacing: 3px;
     }
     .project-badge p {
         margin: 0px 2px;
@@ -1607,7 +1616,7 @@ ul.main-navigation.hidden {
         display: block;
     }
     .bsquare-box {
-        left: -900px;
+        left: -930px;
     }
     .project-badge div:nth-child(1) p {
         display: none;
@@ -1650,9 +1659,7 @@ ul.main-navigation.hidden {
     .mavericks-lab-badge {
         top: 80%;
     }
-    .pure-u-1-6.extrafooter {
-        display: none;
-    }
+    
     .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
         width:50%;
     }
@@ -1662,11 +1669,70 @@ ul.main-navigation.hidden {
     div.pure-u-1-6 {
         width: 33%;
     }
+    .pure-u-1-2 {
+        min-width: 100%;
+    }
+    .project-badge div {
+        padding: 2px;
+    }
+    .project-badge {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    .project-badge:before, .project-badge:after, .project-badge div:after, .project-badge div:before {
+        height: 1px;
+        color: #ddd;
+    }
+    .project-badge div {
+        margin: 3px;
+    }
+    
 
 }
 
 @media screen and (max-width: 375px) {
-    
+    .bsquare-box {
+        left: -1000px;
+    }
+    .section-2-ISS {
+        min-height: 180px;
+    }
+    .section-3-BSQ {
+        min-height: 180px;
+    }
+    .section-4-horizon {
+        min-height: 100px;
+    }
+    .section-5-village {
+        min-height: 240px;
+    }
+    .section-6-shore {
+        min-height: 180px;
+    }
+    .section-7-underwater {
+        min-height: 160px;
+    }
+    .section-8-coast {
+        min-height: 180px;
+    }
+    .section-9-atmosphere {
+        min-height: 170px;
+    }
+    .building-a-future {
+        width: 150px;
+    }
+    .text-small {
+        font-size: 0.8em;
+        margin: 0px;
+        letter-spacing: 1px;
+    }
+    .text-medium {
+        font-size: 0.9em;
+        letter-spacing: 2px;
+    }
+    .asteroid {
+        width: 116px;
+    }
 }
 
 @media screen and (max-width: 320px) {
