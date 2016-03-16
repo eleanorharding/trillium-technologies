@@ -87,7 +87,7 @@
     background-color:#00F;
 }
 
-#loading-percent {  
+#loading-percent {
     width: 50px;
     height: 50px;
     color: #fff;
@@ -126,7 +126,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-    
+
 /*
     width: 100%;
     height: 100%;
@@ -134,8 +134,8 @@
     position: fixed;
     background-color: #111;
     z-index: 1000;
-    
-    transition: height 1s ease; 
+
+    transition: height 1s ease;
 */
 }
 
@@ -1170,7 +1170,8 @@ section#secondary-13-mavericks{
   width:inherit;
   height:inherit;
   overflow:hidden;
-  background-size: 100% auto;
+  background-size: auto 100%;
+  background-position:50%;
   background-repeat:no-repeat;
 
   display:none;
@@ -1848,13 +1849,35 @@ div.content.part2.designers-and-engineers-container div {
 }
 
 @media screen and (min-width: 1440px) {
-    
+
 }
 
 @media screen and (min-width: 1280px) {
     .bsquare-box {
         left: -300px;
     }
+    .secondary-project-desc h1{
+      font-size:1em;
+    }
+    .secondary-project-desc h1:first-child{
+      margin-top:50px;
+    }
+
+    .secondary-project-desc p{
+      font-size:0.7em;
+    }
+    .statnumber{
+      width:35px;
+      height:35px;
+    }
+    .statnumber p{
+      font-size:1.6em;
+      letter-spacing:-2px;
+    }
+    .stattext p{
+      font-size:0.8em;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -1881,6 +1904,29 @@ div.content.part2.designers-and-engineers-container div {
     }
     .section-9-atmosphere {
         min-height: 600px;
+    }
+
+
+    .secondary-project-desc h1{
+      font-size:1em;
+    }
+    .secondary-project-desc h1:first-child{
+      margin-top:50px;
+    }
+
+    .secondary-project-desc p{
+      font-size:0.7em;
+    }
+    .statnumber{
+      width:35px;
+      height:35px;
+    }
+    .statnumber p{
+      font-size:1.6em;
+      letter-spacing:-2px;
+    }
+    .stattext p{
+      font-size:0.6em;
     }
 }
 
@@ -1963,11 +2009,11 @@ div.content.part2.designers-and-engineers-container div {
         width: 80%;
         margin: 0 auto;
     }
-    
+
 }
 
 @media screen and (min-width: 600px) {
-    
+
 }
 
 @media screen and (min-width: 425px) {
@@ -1978,9 +2024,9 @@ div.content.part2.designers-and-engineers-container div {
 }
 
 @media screen and (min-width: 375px) {
-    
+
 }
 
 @media screen and (min-width: 320px) {
-    
+
 }
