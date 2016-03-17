@@ -1738,10 +1738,10 @@ ul.main-navigation.hidden {
 }
 
 @media screen and (max-width: 1920px) {
-    /*.partners-heading {
+    .partners-heading {
         width: 100%;
         text-align: center;
-    }*/
+    }
 }
 
 
