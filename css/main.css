@@ -890,8 +890,8 @@ section#secondary-13-mavericks{
 }
 
 .pure-img{
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
   padding-right:10px;
   padding-top:0;
 
@@ -953,7 +953,7 @@ section#secondary-13-mavericks{
   margin-top:3%;
   margin-bottom:5px;
   letter-spacing:2px;
-  font-size:1.2em;
+  font-size:1em;
   font-weight: BOLD;
 
 }
@@ -965,14 +965,15 @@ section#secondary-13-mavericks{
   font-size:0.8em;
   margin:0 70px 15px 30px;
   font-weight: BOLD;
+  letter-spacing:1px;
 
 }
 .stats{
-  padding-top:20px;
+  padding-top:1px;
   margin-left:30px;
 }
 .statbox{
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 .statnumber{
   display:inline-block;
@@ -1002,6 +1003,7 @@ section#secondary-13-mavericks{
 .shrink{
   font-size:0.7em !important;
 }
+
 .stattext p{
   /*font-family:'ailerons';*/
     color:rgba(0,0,0,0.6);
@@ -1014,8 +1016,7 @@ section#secondary-13-mavericks{
 .mission-partners{
   /*text-align:center;*/
   margin-top:15px;
-  margin-left:10px;
-  margin-right:10px;
+
 }
 
 .mission-partners img{
@@ -1023,6 +1024,10 @@ section#secondary-13-mavericks{
 
 /*padding:3px;*/
   /*height:100%;*/
+}
+.partners-images{
+  margin-left:30px;
+  margin-right:25px;
 }
 
 .secondary-project-gallery{
