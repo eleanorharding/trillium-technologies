@@ -713,27 +713,45 @@ p {
 }
 
 div.space-glass-badge div:nth-child(2) {
-    background-color: #483439;
+    background-color: #24436d;
+/*    background-color: #483439;*/  
+}
+
+div.b-squares-badge div:nth-child(2) {
+    background-color: #24436d;
 }
 
 div.dropfab-badge div:nth-child(2) {
-    background-color: #3E4F6B;
+/*    background-color: #3E4F6B;*/
+    background-color: #24436d;
+}
+
+div.ultrascope-badge div:nth-child(2) {
+    background-color: #24436d;
 }
 
 div.fuelpod-badge div:nth-child(2) {
-    background-color: #911D18;
+/*    background-color: #911D18;*/
+    background-color: #24436d;
 }
 
 div.octotalk-badge div:nth-child(2) {
-    background-color: #1D284B;
+/*    background-color: #1D284B;*/
+    background-color: #24436d;
 }
 
 div.phi-badge div:nth-child(2) {
-    background-color: #5579A8;
+/*    background-color: #5579A8;*/
+    background-color: #24436d;
 }
 
 div.osa-badge div:nth-child(2) {
-    background-color: #222;
+/*    background-color: #222;*/
+    background-color: #24436d;
+}
+
+div.mavericks-lab-badge div:nth-child(2) {
+    background-color: #24436d;
 }
 
 .project-badge div:nth-child(2):hover {
