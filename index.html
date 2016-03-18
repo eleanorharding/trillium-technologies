@@ -837,10 +837,10 @@
                     <div class="gallery galleryimg-bsquares-1"></div>
                     <div class="gallery galleryimg-bsquares-2"></div>
                     <div class="gallery galleryimg-bsquares-3"></div>
-                    <div class="gallery galleryimg-bsquares-4">
+                    <div class="gallery galleryimg-bsquares-4 youtube-frame">
                       <iframe class="youtube-embed" width="80%" height="75%" src="https://www.youtube.com/embed/rLasAIhNM58" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="gallery galleryimg-bsquares-3"></div>
+                    <div class="gallery galleryimg-bsquares-5"></div>
 
                     <ul class="gallery-thumbs">
                       <li class="thumb-bsquares-1"><img src="img/projects/bsquares/thumb1.jpg"/></li>
@@ -1709,7 +1709,9 @@
                 $('.main-navigation').toggleClass('hidden');
             }
 
-            if ($(window).width() < 500) {
+            if ($(window).width() < 601) {
+                alert($(window).width());
+
                 $('.main-navigation').toggleClass('hidden');
                 $( ".future-animation" ).attr( "data-translatey", 20 );
             }
