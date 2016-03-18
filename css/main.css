@@ -27,8 +27,8 @@
 .pace .pace-progress {
     position: fixed;
     z-index: 20000;
-    top: 5%;
-    right: 2%;
+    top: 0;
+    right: 0;
     height: 200px;
     width: 200px;
 
@@ -218,10 +218,9 @@ header {
 
 #preloader > div > div.preloader-content {
     position: absolute;
-    top: 5%;
-    right: 2%;
+    top: 38%;
     height: 100%;
-    text-align: right;
+    text-align: center;
     width: 100%;
 } 
 
@@ -241,6 +240,11 @@ header {
 
 #preloader.preloader-complete {
     opacity: 0;
+}
+
+#preloader p {
+    position: relative;
+    top: -107px;
 }
 
 .trillium-logo-main {
@@ -478,7 +482,7 @@ div.part2 {
 }
 
 div.part2 div {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -517,12 +521,16 @@ div.part2 div {
     max-width:400px;
     right: 20%;
     top:35%;
+    box-shadow: 0px 0px 20px #1a5f9c;
+    border-radius: 50%;
 }
 
 .b-square-circle {
     max-width:400px;
     right: 8%;
     bottom: 33%;
+    box-shadow: 0px 0px 20px #1a5f9c;
+    border-radius: 50%;
 }
 
 .scuba-divers {
