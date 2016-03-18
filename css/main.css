@@ -819,6 +819,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 
 .starshine {
     background-image: url('../img/stars.jpg');
+    background-size: 100% auto;
 }
 
 .all-partners {
@@ -1413,6 +1414,33 @@ ul.main-navigation.hidden {
     .bsquare-box {
         left: -300px;
     }
+    .section-1-moon {
+        min-height: 500px;
+    }
+    .section-2-ISS {
+        min-height: 700px;
+    }
+    .section-3-BSQ {
+        min-height: 700px;
+    }
+    .section-4-horizon {
+        min-height: 400px;
+    }
+    .section-5-village {
+        min-height: 900px;
+    }
+    .section-6-shore {
+        min-height: 700px;
+    }
+    .section-7-underwater {
+        min-height: 700px;
+    }
+    .section-8-coast {
+        min-height: 700px;
+    }
+    .section-9-atmosphere {
+        min-height: 700px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1442,7 +1470,10 @@ ul.main-navigation.hidden {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+    .section-1-moon div.section-content {
+        top: 42%;
+    }
     .bsquare-box {
         left: -500px;
     }
@@ -1527,19 +1558,46 @@ ul.main-navigation.hidden {
     .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
         width:22%;
     }
+    .project-badge p {
+        margin: 2px 2px;
+    }
+    .phi-badge {
+        max-width: 330px;
+    }
     
 }
 
 @media only screen and (max-width: 600px) {
+    .section-1-moon {
+        min-height: 250px;
+    }
     ul.sub-nav {
         display: block;
         position: relative;
     }
-}
-
-@media screen and (max-width: 425px) {
-    .section-1-moon {
+    .section-2-ISS {
+        min-height: 320px;
+    }
+    .section-3-BSQ {
+        min-height: 320px;
+    }
+    .section-4-horizon {
         min-height: 200px;
+    }
+    .section-5-village {
+        min-height: 400px;
+    }
+    .section-6-shore {
+        min-height: 350px;
+    }
+    .section-7-underwater {
+        min-height: 300px;
+    }
+    .section-8-coast {
+        min-height: 300px;
+    }
+    .section-9-atmosphere {
+        min-height: 300px;
     }
     ul.nav {
         display: block;
@@ -1574,6 +1632,43 @@ ul.main-navigation.hidden {
     }
     ul.main-navigation {
         
+    }
+    .bsquare-box {
+        left: -900px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .space-glass-circle {
+        right: 60%;
+    }
+    div.section-content.science-advanced-by-citizens {
+        top: 33%;
+    }
+    .asteroid {
+        width: 250px;
+    }
+    .text-medium {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+    div.section-content.health-of-an-ecosystem-text {
+        top: 35%;
+    }
+    .phi-badge {
+        top: 55%;
+    }
+    .project-badge p {
+        font-size: 0.9em;
+    }
+    .relationships {
+        margin: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .section-1-moon {
+        min-height: 200px;
     }
     .building-a-future {
         width: 180px;
@@ -1711,6 +1806,9 @@ ul.main-navigation.hidden {
     }
     .project-badge div {
         margin: 3px;
+    }
+    .trillium-logo-main {
+        width: 45%;
     }
     
 

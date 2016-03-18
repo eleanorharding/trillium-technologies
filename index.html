@@ -592,7 +592,8 @@
                 $('.main-navigation').toggleClass('hidden');
             }
             
-            if ($(window).width() < 500) {
+            if ($(window).width() < 601) {
+                alert($(window).width());
                 $('.main-navigation').toggleClass('hidden');
                 $( ".future-animation" ).attr( "data-translatey", 20 );
             }
