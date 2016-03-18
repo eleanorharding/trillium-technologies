@@ -941,6 +941,7 @@ section#secondary-13-mavericks{
   /*display:inline-block;*/
 
   /*padding:0;*/
+  position:relative;
 
 
 }
@@ -963,7 +964,7 @@ section#secondary-13-mavericks{
   text-align: left;
   color:rgba(0,0,0,0.7);
   font-size:0.8em;
-  margin:0 70px 15px 30px;
+  margin:0 30px 15px 30px;
   font-weight: BOLD;
   letter-spacing:1px;
 
@@ -1014,9 +1015,12 @@ section#secondary-13-mavericks{
 }
 
 .mission-partners{
+  position:absolute;
+
   /*text-align:center;*/
   margin-top:15px;
-
+  width:100%;
+  bottom:60px;
 }
 
 .mission-partners img{
@@ -1792,6 +1796,9 @@ ul.main-navigation.hidden {
 
     max-width: 80px;
   }*/
+  .pure-img{
+    max-height:75px;
+  }
 
 }
 
