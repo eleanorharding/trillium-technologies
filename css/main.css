@@ -618,8 +618,9 @@ div.section-content.health-of-an-ecosystem-text {
     text-align: left;
     max-width: 250px;
 
-    border-left: 3px solid #fff;
-    border-right: 3px solid #fff;
+    border-left: 3px solid #2F74B1;
+    border-right: 3px solid #2F74B1;
+    background-color: ;
     font-size: 0.8em;
     position: absolute;
 
@@ -632,6 +633,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#2F74B1;
 }
 
 .project-badge:after {
@@ -641,6 +643,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#2F74B1;
     bottom: 0px;
 }
 
@@ -651,6 +654,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#2F74B1;
     top:0;
     right:0;
 }
@@ -662,12 +666,14 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
+    background-color:#2F74B1;
     bottom: 0px;
     right: 0;
 }
 
 .project-badge div {
-    background-color: rgba(210,210,210,0.6);
+    /*background-color: rgba(210,210,210,0.6);*/
+    background-color: rgba(30,30,30,0.55);
     padding: 10px;
     margin: 6px 3px;
     /*box-shadow: 0px 0px 50px rgba(0,20,50,0.2);*/
@@ -675,6 +681,7 @@ div.section-content.health-of-an-ecosystem-text {
 
 .project-badge h3 {
     font-family: 'ailerons';
+      /*text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     letter-spacing: 5px;
     font-size: 1.8em;
     color: #fff;
@@ -705,8 +712,9 @@ p {
 
 .project-badge p {
     color: #fff;
+      /*text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
     margin: 5px 2px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .space-glass-badge {
@@ -724,45 +732,45 @@ p {
 }
 
 div.space-glass-badge div:nth-child(2) {
-    background-color: #24436d;
+    background-color: #2F74B1;
 /*    background-color: #483439;*/
 }
 
 div.b-squares-badge div:nth-child(2) {
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.dropfab-badge div:nth-child(2) {
 /*    background-color: #3E4F6B;*/
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.ultrascope-badge div:nth-child(2) {
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.fuelpod-badge div:nth-child(2) {
 /*    background-color: #911D18;*/
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.octotalk-badge div:nth-child(2) {
 /*    background-color: #1D284B;*/
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.phi-badge div:nth-child(2) {
 /*    background-color: #5579A8;*/
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.osa-badge div:nth-child(2) {
 /*    background-color: #222;*/
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 div.mavericks-lab-badge div:nth-child(2) {
-    background-color: #24436d;
+    background-color: #2F74B1;
 }
 
 .project-badge div:nth-child(2):hover {
@@ -818,6 +826,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 .mavericks-lab-badge {
     top: 68%;
     right: 1%;
+    z-index:100;
 }
 
 
@@ -1014,7 +1023,7 @@ section#secondary-13-mavericks{
 }
 .statnumber p{
   font-family:'ailerons';
-  letter-spacing:-10px;
+  letter-spacing:-7px;
   font-size:2.2em;
     text-align: center;
     margin:0 10px 0 0 ;
@@ -1130,6 +1139,7 @@ position:relative;
   letter-spacing:0px;
 }
 
+
 .secondary-project-gallery a:hover{
   text-decoration: underline;
 }
@@ -1137,6 +1147,12 @@ position:relative;
 .secondary-project-gallery a{
 
   text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.project-copy{
+  position:relative;
+  top:0px;
+  height:auto;
 }
 
 .gallery-1{
@@ -1809,7 +1825,7 @@ ul.main-navigation.hidden {
   }
   .statnumber p{
     font-size:1.6em;
-    letter-spacing:-2px;
+
   }
   .stattext p{
     font-size:0.8em;
@@ -1853,7 +1869,7 @@ ul.main-navigation.hidden {
     }
     .statnumber p{
       font-size:1.6em;
-      letter-spacing:-2px;
+
     }
     .stattext p{
       font-size:0.8em;
@@ -1911,7 +1927,7 @@ ul.main-navigation.hidden {
     }
     .statnumber p{
       font-size:1.6em;
-      letter-spacing:-2px;
+
     }
     .stattext p{
       font-size:0.6em;
@@ -1987,6 +2003,7 @@ ul.main-navigation.hidden {
         top: 40%;
     }
     .project-badge h3 {
+
         letter-spacing: 0px;
         font-size: 1.4em;
     }
