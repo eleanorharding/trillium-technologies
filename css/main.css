@@ -620,8 +620,8 @@ div.section-content.health-of-an-ecosystem-text {
     text-align: left;
     max-width: 250px;
 
-    border-left: 3px solid #2F74B1;
-    border-right: 3px solid #2F74B1;
+    border-left: 3px solid #79A9D4;
+    border-right: 3px solid #79A9D4;
     background-color: ;
     font-size: 0.8em;
     position: absolute;
@@ -635,7 +635,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
-    background-color:#2F74B1;
+    background-color:#79A9D4;
 }
 
 .project-badge:after {
@@ -645,7 +645,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
-    background-color:#2F74B1;
+    background-color:#79A9D4;
     bottom: 0px;
 }
 
@@ -656,7 +656,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
-    background-color:#2F74B1;
+    background-color:#79A9D4;
     top:0;
     right:0;
 }
@@ -668,7 +668,7 @@ div.section-content.health-of-an-ecosystem-text {
     width: 8px;
     height: 3px;
     background: #fff;
-    background-color:#2F74B1;
+    background-color:#79A9D4;
     bottom: 0px;
     right: 0;
 }

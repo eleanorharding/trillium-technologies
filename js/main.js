@@ -11,8 +11,7 @@ function setHash(event){
 
 /*going to the project side */
 $('.project-link').bind('click',function(event){
-  var lock = false;
-      scrollLock(lock);
+
 
       /*stores the scroll position before moving to the page */
       storedScrollPos = $(window).scrollTop();
@@ -80,7 +79,7 @@ $('.project-link').bind('click',function(event){
 /*going from the project side */
  $('.project-scroll-back').bind('click',function(event){
 
-   scrollLock(true);
+
 
         $('html, body').animate({
             scrollLeft: 0
