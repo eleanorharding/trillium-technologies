@@ -862,7 +862,7 @@ section.secondary {
   height: 100vh; /* Default secondary height, set precise h in spec. class */
   /*border:2px solid white;*/
   color:white;
-  margin-top:50px;
+  margin-top:0;
 
 }
 
@@ -877,7 +877,9 @@ section.secondary {
 section.secondary-1-moon {
   height:400px;
 }
-
+section#secondary-2-ISS{
+  margin-top:50px;
+}
 section#secondary-3-BSQ{
   background-color: #161827;
 }
@@ -934,6 +936,10 @@ section#secondary-13-mavericks{
   padding-top:0;
 
 }
+
+  .mobile-back{
+    display:none;
+  }
 .secondary-project-title{
   /*position:absolute;*/
   /*background-image: url("../img/dropfab-title.png");
@@ -2199,8 +2205,8 @@ ul.main-navigation.hidden {
       position:static;
     }
 
-    .secondary-project-desc h1:first-child{
-      margin-top:30px;
+    .secondary-project-desc{
+      padding-top:23px;
     }
     .invisiBorder{
       display:none;
@@ -2217,13 +2223,55 @@ ul.main-navigation.hidden {
       margin:2px;
     }
     .mobile-back{
+      display:block;
       color:black;
       left:84%;
-      margin-top:-3px;
-      font-size:0.7em;
-
+      margin-top:-20px;
+      font-size:0.8em;
+    }
+    .secondary-project-title img{
+      margin-top:20px;
+    }
+    .project-copy h1{
+      margin-left:15px;
+      font-size:0.8em;
+    }
+    .project-copy p{
+      margin-left:15px;
+    }
+    .stats{
+      margin-left:15px;
 
     }
+
+    .statnumber{
+    height:1.5em;
+    width:1.5em;
+
+    }
+    .statnumber p{
+      font-size:1.2em;
+    }
+    .mission-partners h1{
+      font-size:0.8em;
+      margin-left:15px;
+    }
+    .big-back{
+      display:none;
+    }
+    .secondary-project-gallery{
+      height:300px;
+    }
+    .secondary{
+      border-top:solid 5px white;
+    }
+    .gallery-thumbs{
+      top:80%;
+    }
+    .inter-project{
+      display:none;
+    }
+
 }
 
 @media screen and (max-width: 435px) {

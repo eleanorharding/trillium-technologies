@@ -11,6 +11,8 @@ function setHash(event){
 
 /*going to the project side */
 $('.project-link').bind('click',function(event){
+  var lock = false;
+      scrollLock(lock);
 
       /*stores the scroll position before moving to the page */
       storedScrollPos = $(window).scrollTop();
@@ -77,6 +79,8 @@ $('.project-link').bind('click',function(event){
   });
 /*going from the project side */
  $('.project-scroll-back').bind('click',function(event){
+
+   scrollLock(true);
 
         $('html, body').animate({
             scrollLeft: 0
@@ -146,3 +150,23 @@ $( document ).ready(function() {
 
 
 });
+
+// function scrollLock(lock){
+//   if(lock == true){
+//
+// $(window).scroll(function locking(e){
+//   var footer = $('footer');
+//   var height = footer.height();
+//   var offset = footer.offset();
+//   var top = offset.top;
+//   var limit = (top) -100 ;
+//
+//   if($(window).scrollTop() >=limit){
+//     $(window).scrollTop(limit);
+//   }
+// })
+// }else{
+//   locking().stop();
+//
+// }
+// };
