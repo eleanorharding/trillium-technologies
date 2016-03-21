@@ -172,6 +172,7 @@ textarea {
 
 body {
     background-color: #000;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 
 a {
@@ -199,6 +200,7 @@ header {
     background-color: #111;
     width: 100%;
     z-index: 1000;
+    -webkit-transform: translateZ(100);
 
 }
 
@@ -2185,6 +2187,42 @@ ul.main-navigation.hidden {
     }
     .relationships {
         margin: 0px 40px;
+    }
+
+    section.secondary{
+      height:100%;
+    }
+    .secondary-project-title{
+      height:initial;
+    }
+    .mission-partners{
+      position:static;
+    }
+
+    .secondary-project-desc h1:first-child{
+      margin-top:30px;
+    }
+    .invisiBorder{
+      display:none;
+    }
+
+    .secondary-project-gallery{
+      height:500px;
+
+    }
+    .gallery-thumbs{
+      padding:0px;
+    }
+    .gallery-thumbs li{
+      margin:2px;
+    }
+    .mobile-back{
+      color:black;
+      left:84%;
+      margin-top:-3px;
+      font-size:0.7em;
+
+
     }
 }
 

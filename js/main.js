@@ -23,9 +23,18 @@ $('.project-link').bind('click',function(event){
        $('html, body').animate({
            scrollTop: $($rightAnchor).offset().top-45
        }, 500);
-       $('html, body').animate({
-           scrollLeft: $($rightAnchor).offset().left+20
-       }, 500);
+       if ($(window).width() > 601) {
+         $('html, body').animate({
+             scrollLeft: $($rightAnchor).offset().left+20
+         }, 500);
+
+      $('html').css('overflowY', 'hidden');
+    } else {
+      $('html, body').animate({
+          scrollLeft: $($rightAnchor).offset().left
+      }, 500);
+    }
+
 
 
        /* Stops the anchor from jumping directly to the spot*/
@@ -33,7 +42,7 @@ $('.project-link').bind('click',function(event){
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
       //  timeout = window.setTimeout(setHash, 1000);
-       $('html').css('overflowY', 'hidden');
+
        console.log($(window).width());
 
  });
