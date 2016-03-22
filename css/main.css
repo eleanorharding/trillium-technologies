@@ -1095,6 +1095,16 @@ section#secondary-13-mavericks{
   /*border:solid rgba(255,255,255,0.5) 5px;*/
 }
 
+.secondary-project-gallery:before{
+  content: "<";
+  position: absolute;
+  top:50vh;
+  left:37%;
+  display: block;
+
+  color: #fff;
+}
+
 .invisiBorder{
   position:absolute;
 

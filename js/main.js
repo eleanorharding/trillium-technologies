@@ -12,7 +12,7 @@ function setHash(event){
 /*going to the project side */
 $('.project-link').bind('click',function(event){
 
-
+        $('.secondary').removeClass('hidden');
       /*stores the scroll position before moving to the page */
       storedScrollPos = $(window).scrollTop();
 
@@ -96,6 +96,10 @@ $('.project-link').bind('click',function(event){
          timeout = window.setTimeout(setHash, 1000);
          $('html').css('overflowY', 'auto');
          console.log($(window).width());
+         setTimeout(function(){
+             $('.secondary').toggleClass('hidden');
+         }, 1000);
+
   });
 
 
