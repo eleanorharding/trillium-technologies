@@ -700,11 +700,14 @@ p {
     color: #fff;
     font-weight: 400;
     font-size: 1.8em;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .team-bios div {
     margin: 30px 0px 70px 0px;
+}
+.team-bios div.team-bio {
+    margin: 90px 0px 70px 0px;
 }
 
 .emphasize {
@@ -1576,6 +1579,11 @@ div.content.part2.designers-and-engineers-container div {
     color: rgba(255,255,255,0.87);
 }
 
+.team-headshots img {
+    width: 100%;
+    vertical-align: top;
+}
+
 
 .hamburger {
     position: absolute;
@@ -1595,7 +1603,12 @@ ul.main-navigation.hidden {
 
 .pure-u-1-2 {
     min-width: 400px;
+}
 
+.team-bio h5 {
+    color: #3481c5;
+    text-transform: uppercase;
+    margin: 0px;
 }
 
 @-webkit-keyframes diverBob {
