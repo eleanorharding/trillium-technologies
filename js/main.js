@@ -5,7 +5,9 @@ var timeout;
 var $rightAnchor;
 
 function setHash(event){
-  window.location.hash= $rightAnchor;
+    //  event.preventDefault();
+  window.location.hash= $rightAnchor+" ";
+
 
 };
 
@@ -17,7 +19,9 @@ $('.project-link').bind('click',function(event){
       storedScrollPos = $(window).scrollTop();
 
       /*Fetch the right anchor name */
+
       $rightAnchor = $(this).attr('href');
+
 
       /*SCROLLIN' */
 
@@ -42,9 +46,20 @@ $('.project-link').bind('click',function(event){
          event.preventDefault();
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
-      //  timeout = window.setTimeout(setHash, 1000);
+      var string = $(this).attr('href');
+      var value = string.split('-');
+        $rightAnchor = value[2];
+       timeout = window.setTimeout(setHash, 1000);
 
-       console.log($(window).width());
+      //  console.log($(window).width());
+
+      $(window).on('hashchange',function(){
+        if(location.hash.slice(1) == "home" || location.hash.slice(1) == ""){
+
+          scrollback();
+        }
+
+      });
 
  });
 
@@ -73,34 +88,38 @@ $('.project-link').bind('click',function(event){
         $('html').css('overflowY', 'hidden');
 
       }
-        console.log($(window).width());
+        // console.log($(window).width());
 
   });
 /*going from the project side */
  $('.project-scroll-back').bind('click',function(event){
 
 
+      scrollback();
 
-        $('html, body').animate({
-            scrollLeft: 0
-        }, 500);
-
-        $("html, body").animate({
-           scrollTop: storedScrollPos
-         }, 500);
-
-
-
-         event.preventDefault();
-         $rightAnchor = " ";
-         timeout = window.setTimeout(setHash, 1000);
-         $('html').css('overflowY', 'auto');
-         console.log($(window).width());
-         setTimeout(function(){
-             $('.secondary').toggleClass('hidden');
-         }, 1000);
 
   });
+
+  function scrollback(){
+    $('html, body').animate({
+        scrollLeft: 0
+    }, 500);
+
+    $("html, body").animate({
+       scrollTop: storedScrollPos
+     }, 500);
+
+
+
+     event.preventDefault();
+     $rightAnchor = "home";
+     timeout = window.setTimeout(setHash, 1000);
+     $('html').css('overflowY', 'auto');
+    //  console.log($(window).width());
+     setTimeout(function(){
+         $('.secondary').toggleClass('hidden');
+     }, 1000);
+  }
 
 
   /*Color picker for the stats */
@@ -117,7 +136,7 @@ $( ".statnumber" ).each(function() {
 /* poplutating the gallery based on the classes and their numbers */
 /* Setting the gallery image as bg and then hiding it means that the browser wont load it until we need it*/
 $("[class*='galleryimg']").each(function(index) {
-  console.log( index + " Counting");
+  // console.log( index + " Counting");
   var fullname = $(this).attr('class');
   var arr = fullname.split('-');
   var album = arr[1];
@@ -143,7 +162,7 @@ $('[class^="thumb"]').bind('click',function(event){
   });
   $('.galleryimg-'+album+"-"+slide).css("display", "block");
 
-  console.log(number);
+  // console.log(number);
 });
 
 
@@ -154,22 +173,68 @@ $( document ).ready(function() {
 
 });
 
-// function scrollLock(lock){
-//   if(lock == true){
-//
-// $(window).scroll(function locking(e){
-//   var footer = $('footer');
-//   var height = footer.height();
-//   var offset = footer.offset();
-//   var top = offset.top;
-//   var limit = (top) -100 ;
-//
-//   if($(window).scrollTop() >=limit){
-//     $(window).scrollTop(limit);
-//   }
-// })
-// }else{
-//   locking().stop();
-//
-// }
-// };
+
+
+/*pay no attention to this... */
+
+function hashSpin(){
+
+  setTimeout(function(){
+    window.location.hash= "S";
+  },200);
+  setTimeout(function(){
+    window.location.hash= "SP";
+  },400);
+  setTimeout(function(){
+    window.location.hash= "SPA";
+  },600);
+  setTimeout(function(){
+    window.location.hash= "SPAC";
+  },800);
+  setTimeout(function(){
+    window.location.hash= "SPACE";
+  },1000);
+  setTimeout(function(){
+    window.location.hash= "SPACE";
+  },1200);
+  setTimeout(function(){
+    window.location.hash= "SPACE!";
+  },1400);
+  setTimeout(function(){
+    window.location.hash= "SPACE!!";
+  },1600);
+  setTimeout(function(){
+    window.location.hash= "SPACE!!!";
+  },1800);
+  setTimeout(function(){
+    window.location.hash= "SPACE!!!!";
+  },2000);
+  setTimeout(function(){
+    window.location.hash= "SPACE!!!";
+  },2200);
+  setTimeout(function(){
+    window.location.hash= "SPACE!!";
+  },2400);
+  setTimeout(function(){
+    window.location.hash= "SPACE!";
+  },2600);
+  setTimeout(function(){
+    window.location.hash= "SPACE";
+  },2800);
+  setTimeout(function(){
+    window.location.hash= "SPAC";
+  },3000);
+  setTimeout(function(){
+    window.location.hash= "SPA";
+  },3200);
+  setTimeout(function(){
+    window.location.hash= "SP";
+  },3400);
+  setTimeout(function(){
+    window.location.hash= "S";
+  },3600);
+  setTimeout(function(){
+    window.location.hash= "";
+  },3800);
+
+}
