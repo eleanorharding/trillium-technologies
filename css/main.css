@@ -500,7 +500,8 @@ div.part2 div {
 }
 
 .how-we-work p {
-
+  margin-left:40px;
+  margin-right:40px;
 }
 
 .work-with-us-CTA {
