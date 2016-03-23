@@ -3,6 +3,7 @@
 var storedScrollPos;
 var timeout;
 var $rightAnchor;
+var onProject = false;
 
 function setHash(event){
     //  event.preventDefault();
@@ -11,9 +12,16 @@ function setHash(event){
 
 };
 
+$('.sub-nav a').bind('click', function(event){
+  if(onProject == true){
+    storedScrollPos = $($(this).attr('href')).offset().top;
+    scrollback();
+  }
+});
 /*going to the project side */
 $('.project-link').bind('click',function(event){
 
+        onProject = true;
         $('.secondary').removeClass('hidden');
       /*stores the scroll position before moving to the page */
       storedScrollPos = $(window).scrollTop();
@@ -101,6 +109,7 @@ $('.project-link').bind('click',function(event){
   });
 
   function scrollback(){
+    onProject = false;
     $('html, body').animate({
         scrollLeft: 0
     }, 500);
