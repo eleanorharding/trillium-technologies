@@ -1035,28 +1035,32 @@ section#secondary-13-mavericks{
   margin-bottom:10px;
 }
 .statnumber{
-  display:inline-block;
+  /*height:inherit;*/
+  /*display:inline-block;
   background-color:#e4ecec;
   height:55px;
   width:55px;
 
-  text-align: center;
+  text-align: center;*/
 
 
 }
+
 .statnumber p{
   font-family:'ailerons';
   letter-spacing:-7px;
   font-size:2.2em;
     text-align: center;
-    margin:0 10px 0 0 ;
+    /*margin:0 10px 0 0 ;*/
     color:rgba(0,0,0,0.5);
+    margin:5px;
 }
 
 .stattext{
 
-  display: inline-block;
-  margin-top: -15px;
+  /*display: inline-block;
+  margin-top: -15px;*/
+
 
 }
 .shrink{
@@ -1064,12 +1068,19 @@ section#secondary-13-mavericks{
 }
 
 .stattext p{
+
+
   /*font-family:'ailerons';*/
     color:rgba(0,0,0,0.6);
     font-size:1em;
-    margin: -15px 0 0 20px;
+    /*margin: -15px 0 0 20px;*/
+
 
     letter-spacing:1px;
+    margin:0px;
+    margin-left:20px;
+    margin-top:5px;
+
 }
 
 .mission-partners{
@@ -2297,6 +2308,9 @@ ul.main-navigation.hidden {
     }
     .inter-project{
       display:none;
+    }
+    .secondary-project-desc h1:first-of-type{
+      margin-top:5px;
     }
 
 }
