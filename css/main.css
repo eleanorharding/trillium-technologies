@@ -358,6 +358,10 @@ section.main img.sectionBG {
     padding-right: 40px;
 }
 
+.padded-top-bottom {
+    padding: 50px 0px;
+}
+
 .how-we-work-content h2 {
     color: #fff;
     font-weight: normal;
@@ -410,6 +414,12 @@ form.mission-form *{
     font-size: 1.2em;
 }
 
+form.mission-form.pure-form fieldset {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 form.mission-form.pure-form input {
     margin: 2px 0px 8px 0px;
     font-size: 0.9em;
@@ -419,6 +429,8 @@ form.mission-form.pure-form input {
 
 form.pure-form.mission-form legend {
     color: #fff;
+    font-family: 'ailerons';
+    font-size: 2em;
 }
 
 form.mission-form button.pure-button.pure-button-primary {
@@ -1588,6 +1600,14 @@ ul.main-navigation.hidden {
 
 }
 
+.full-width-img img {
+    width: 90%;
+}
+
+.full-width-img {
+    margin: -2px;
+}
+
 @-webkit-keyframes diverBob {
   0%, 100%   { top: 5%; }
   50% { top: 8%; }
@@ -1960,8 +1980,9 @@ ul.main-navigation.hidden {
     .section-9-atmosphere {
         min-height: 600px;
     }
-
-
+    form.mission-form.pure-form fieldset {
+        width: 80%;
+    }
     .secondary-project-desc h1{
       font-size:1em;
     }
@@ -2102,6 +2123,9 @@ ul.main-navigation.hidden {
     ul.sub-nav {
         display: block;
         position: relative;
+    }
+    form.mission-form.pure-form fieldset {
+        width: 90%;
     }
 
     .section-2-ISS {
