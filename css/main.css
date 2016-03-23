@@ -810,7 +810,7 @@ div.mavericks-lab-badge div:nth-child(2) {
     right: 1%;
 }
 
-/*#ultrascope {
+#ultrascope {
     position: relative;
     top: -650px;
 }
@@ -818,7 +818,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 #fuelpod {
     position: relative;
     top: -600px;
-}*/
+}
 
 
 .fuelpod-badge {
@@ -1310,6 +1310,19 @@ div.onscreen {
     right: 0;
 }
 
+.dark-bg {
+    background-color: rgba(30,30,30,0.7);
+    padding: 20px;
+}
+
+.soft-padding {
+    
+}
+
+.dark-bg h3 {
+    margin-top: 0px;
+}
+
 .text-medium {
     font-size: 1.7em;
     display: block;
@@ -1322,7 +1335,7 @@ div.onscreen {
 }
 
 .text-small {
-    font-size: 1em;
+    font-size: 1.2em;
     font-style: italic;
     opacity: 0.7;
     /*text-transform: lowercase;*/
@@ -1336,6 +1349,48 @@ h1.future-where-text {
     font-style: italic;
     opacity: 0.6;
 }
+
+.scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+/*.scuba-divers {
+    -webkit-animation: diverBob 6s infinite; 
+    -moz-animation:    diverBob 6s infinite; 
+    -o-animation:      diverBob 6s infinite; 
+    animation:         diverBob 6s infinite; 
+
+    animation-timing-function: ease;
+}
+
+
+
+@-webkit-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-moz-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@-o-keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}
+@keyframes diverBob {
+  0%, 100%   { top: 5%; }
+  50% { top: 8%; }
+}*/
 
 
 div.section-content.explore-monitor-protect-text {
@@ -1373,6 +1428,7 @@ div.section-content.explore-monitor-protect-text {
 .social-icons:hover {
     opacity: 1;
 }
+
 
 ul.footer-missions, ul.footer-about {
     list-style-type: none;
