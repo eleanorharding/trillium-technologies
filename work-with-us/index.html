@@ -57,17 +57,25 @@
             <div class="pure-g how-we-work-content content-80">
 
                 <div class="pure-u-1-1 padded-top-bottom ">
-                    <form class="pure-form mission-form">
+                    <form class="pure-form mission-form" method="post" name="mission-design-form" action="mission-design.php">
                         <fieldset>
                             <legend>Design your mission:</legend>
 
-                            I work in <input type="text" placeholder="industry"> but things are broken. <br/>
+                            I work in <input type="text" placeholder="industry" name="industry" required> but things are broken. <br/>
                             We're dealing with a lot of
-                            <input type="text" placeholder="problems"> .<br/>
-                            I'd really like to design a mission that <input type="text" placeholder="does something incredible" class="pure-input-1-3"> <br/>
-                            with the impact being <input type="text" placeholder="world changing"> .
+                            <input type="text" placeholder="problems" name="problems" required> .<br/>
+                            I'd really like to design a mission that <input type="text" placeholder="does something incredible" class="pure-input-1-3" name="does-something"> <br/>
+                            with the impact being <input type="text" placeholder="world changing" name="impact" required> .
                             <br/>
-                            <button type="submit" class="pure-button pure-button-primary">Initiate Mission</button>
+                            <span class="hideme" id="hiddenspan">
+                                <hr/>
+                                Name: <input type="text" placeholder="name" name="name" required> <br/>
+                                Organisation: <input type="text" placeholder="organisation" name="organisation"> <br/>
+                                Email: <input type="email" placeholder="name@email.com" name="email" required><br/>
+                                <hr/>
+                            </span>
+                            <div class="pure-button pure-button-primary" id="initiateMission" onClick="formToggle()">Initiate Mission</div>
+                            <button type="submit" class="pure-button pure-button-primary hideme" id="startMission" >Start Mission</button>
                         </fieldset>
                     </form>
 
@@ -234,7 +242,6 @@
             </div>
         </footer>
 
-
         <script src="../js/wow.js"></script>
         <script>
               new WOW().init();
@@ -245,7 +252,14 @@
         <script src="../js/main.js"></script>
         <script src="../js/jquery.scrollme.min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript">
+             function formToggle() {
+                $('#initiateMission').toggleClass("hideme");
+                $('#hiddenspan').toggleClass("hideme");
+                $('#startMission').toggleClass("hideme");
+            }
+        </script>
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -409,7 +409,7 @@ section.main img.sectionBG {
     font-family: 'ailerons';
 }
 
-form.mission-form *{
+form.mission-form{
     color: #fff;
     font-size: 1.2em;
 }
@@ -433,13 +433,16 @@ form.pure-form.mission-form legend {
     font-size: 2em;
 }
 
-form.mission-form button.pure-button.pure-button-primary {
+form.mission-form .pure-button.pure-button-primary {
     font-size: 1em;
     margin: 20px 0px;
     text-transform: uppercase;
     background-color: #3481c5;
 }
 
+.low-z {
+    
+}
 
 .main-content {
     margin-top: 45px;
@@ -1597,7 +1600,6 @@ ul.main-navigation.hidden {
 
 .pure-u-1-2 {
     min-width: 400px;
-
 }
 
 .full-width-img img {
@@ -1606,6 +1608,10 @@ ul.main-navigation.hidden {
 
 .full-width-img {
     margin: -2px;
+}
+
+.hideme, .pure-button.hideme {
+    display: none;
 }
 
 @-webkit-keyframes diverBob {
