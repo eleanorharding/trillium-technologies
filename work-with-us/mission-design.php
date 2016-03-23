@@ -19,11 +19,10 @@
                 I'd really like to design a mission that $doesSomething 
                 with the impact being $impact \n";
 
-      $to = "hello@eleanor.xyz";
+      $to = "hello@trillium.tech";
       $subject = "MISSION INITIATED";
       mail($to, $subject, $mailBody, "From: $name <$emailaddress>");
       header("Location: http://trillium.tech/work-with-us");
       exit;
-
   }
 ?>

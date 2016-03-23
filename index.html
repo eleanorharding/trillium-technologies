@@ -1730,6 +1730,7 @@
             if ($(window).width() < 601) {
                 $('.secondary').toggleClass('hidden');
                 $('.main-navigation').toggleClass('hidden');
+                $('.main-navigation').toggleClass('show');
                 $( ".future-animation" ).attr( "data-translatey", 20 );
             }
 
@@ -1743,11 +1744,11 @@
                 setTimeout(function(){
 
                    $('#preloader').toggleClass('preloader-complete');
-                }, 200);
+                }, 800);
 
                 setTimeout(function(){
                    $('#preloader').toggleClass('hide-preloader');
-                }, 400);
+                }, 1000);
 
             });
         </script>
