@@ -1889,7 +1889,7 @@ ul.main-navigation.hidden {
     }
     .statnumber p{
       letter-spacing:-4px;
-      font-size:1.4em;
+      font-size:1.3em;
 
     }
     .stattext p{
@@ -1931,6 +1931,9 @@ ul.main-navigation.hidden {
     }
     .section-9-atmosphere {
         min-height: 700px;
+    }
+    .gallery-thumbs li img{
+      height:45px;
     }
 
 }
@@ -1989,6 +1992,7 @@ ul.main-navigation.hidden {
     .stats{
       padding-top:5px;
     }
+
 }
 
 @media screen and (max-width: 800px) {
