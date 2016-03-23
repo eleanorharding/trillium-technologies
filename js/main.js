@@ -48,7 +48,7 @@ $('.project-link').bind('click',function(event){
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
       var string = $(this).attr('href');
       var value = string.split('-');
-        $rightAnchor = value[2];
+        $rightAnchor = value[1]+value[2];
        timeout = window.setTimeout(setHash, 1000);
 
       //  console.log($(window).width());
@@ -113,12 +113,14 @@ $('.project-link').bind('click',function(event){
 
      event.preventDefault();
      $rightAnchor = "home";
-     timeout = window.setTimeout(setHash, 1000);
+    //  timeout = window.setTimeout(setHash, 1000);
      $('html').css('overflowY', 'auto');
     //  console.log($(window).width());
+    if ($(window).width() < 601) {
      setTimeout(function(){
          $('.secondary').toggleClass('hidden');
      }, 1000);
+   }
   }
 
 
