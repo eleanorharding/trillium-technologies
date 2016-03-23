@@ -1882,6 +1882,34 @@ ul.main-navigation.hidden {
     max-height:75px;
   }
 
+  .section-1-moon {
+        min-height: 450px;
+    }
+    .section-2-ISS {
+        min-height: 650px;
+    }
+    .section-3-BSQ {
+        min-height: 650px;
+    }
+    .section-4-horizon {
+        min-height: 350px;
+    }
+    .section-5-village {
+        min-height: 850px;
+    }
+    .section-6-shore {
+        min-height: 650px;
+    }
+    .section-7-underwater {
+        min-height: 650px;
+    }
+    .section-8-coast {
+        min-height: 650px;
+    }
+    .section-9-atmosphere {
+        min-height: 650px;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -1925,33 +1953,7 @@ ul.main-navigation.hidden {
     }
 
 
-    .section-1-moon {
-        min-height: 500px;
-    }
-    .section-2-ISS {
-        min-height: 700px;
-    }
-    .section-3-BSQ {
-        min-height: 700px;
-    }
-    .section-4-horizon {
-        min-height: 400px;
-    }
-    .section-5-village {
-        min-height: 900px;
-    }
-    .section-6-shore {
-        min-height: 700px;
-    }
-    .section-7-underwater {
-        min-height: 700px;
-    }
-    .section-8-coast {
-        min-height: 700px;
-    }
-    .section-9-atmosphere {
-        min-height: 700px;
-    }
+    
 
 }
 
