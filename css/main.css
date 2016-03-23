@@ -1002,7 +1002,7 @@ section#secondary-13-mavericks{
 
   /*padding:0;*/
   position:relative;
-
+  width:25%;
 
 }
 
@@ -1120,6 +1120,7 @@ section#secondary-13-mavericks{
   /*z-index:1;*/
 
   /*border:solid rgba(255,255,255,0.5) 5px;*/
+  width:66.6667%;
 }
 
 
@@ -1327,7 +1328,7 @@ div.onscreen {
 }
 
 .soft-padding {
-    
+
 }
 
 .dark-bg h3 {
@@ -1376,10 +1377,10 @@ h1.future-where-text {
 }
 
 /*.scuba-divers {
-    -webkit-animation: diverBob 6s infinite; 
-    -moz-animation:    diverBob 6s infinite; 
-    -o-animation:      diverBob 6s infinite; 
-    animation:         diverBob 6s infinite; 
+    -webkit-animation: diverBob 6s infinite;
+    -moz-animation:    diverBob 6s infinite;
+    -o-animation:      diverBob 6s infinite;
+    animation:         diverBob 6s infinite;
 
     animation-timing-function: ease;
 }
@@ -1998,11 +1999,29 @@ ul.main-navigation.show {
     .stats{
       padding-top:5px;
     }
-  
+
+
+}
+@media screen and (max-width: 1366px), screen and (max-height: 768px) {
+  .secondary-project-desc{
+
+    width:37.5%;
+  }
+  .secondary-project-gallery{
+    width:54.1667%;
+  }
 
 }
 
+
 @media screen and (max-width: 1280px) {
+  .secondary-project-desc{
+
+    width:27%;
+  }
+  .secondary-project-gallery{
+    width:64.65%;
+  }
     .bsquare-box {
         left: -300px;
     }
@@ -2040,6 +2059,16 @@ ul.main-navigation.show {
 
 
 
+
+}
+@media  and (max-width: 1280px), screen and (max-height: 800px){
+  .secondary-project-desc{
+
+    width:37.5%;
+  }
+  .secondary-project-gallery{
+    width:54.1667%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2101,6 +2130,12 @@ ul.main-navigation.show {
 }
 
 @media screen and (max-width: 800px) {
+  .secondary-project-desc{
+    width:87.5%;
+  }
+  .secondary-project-gallery{
+    width:100%;
+  }
   .gallery-thumbs li img{
     height:35px;
   }

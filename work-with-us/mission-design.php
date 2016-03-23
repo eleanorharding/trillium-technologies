@@ -16,13 +16,13 @@
 
                 I work in $industry, but things are broken. \n
                 We're dealing with a lot of $problems \n
-                I'd really like to design a mission that $doesSomething 
+                I'd really like to design a mission that $doesSomething
                 with the impact being $impact \n";
 
       $to = "hello@trillium.tech";
       $subject = "MISSION INITIATED";
       mail($to, $subject, $mailBody, "From: $name <$emailaddress>");
-      header("Location: http://trillium.tech/work-with-us");
+      header("Location: http://trilliumtechnologies.net/work-with-us");
       exit;
   }
 ?>
