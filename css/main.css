@@ -441,7 +441,7 @@ form.mission-form .pure-button.pure-button-primary {
 }
 
 .low-z {
-    
+
 }
 
 .main-content {
@@ -1052,7 +1052,7 @@ section#secondary-13-mavericks{
 .statnumber p{
   font-family:'ailerons';
   letter-spacing:-7px;
-  font-size:2.2em;
+  font-size:1.5em;
     text-align: center;
     /*margin:0 10px 0 0 ;*/
     color:rgba(0,0,0,0.5);
@@ -1865,33 +1865,11 @@ ul.main-navigation.show {
 
 
 @media screen and (max-width: 1440px) {
-  .secondary-project-desc h1{
-    font-size:0.8em;
-  }
-  .secondary-project-desc h1:first-of-type{
-    margin-top:50px;
-  }
 
-  .secondary-project-desc p{
-    font-size:0.7em;
-  }
-  .statnumber{
-    width:35px;
-    height:35px;
-  }
-  .statnumber p{
-    font-size:1.6em;
-
-  }
-  .stattext p{
-    font-size:0.7em;
-  }
   .mission-partners h1{
     margin-top:10px !important;
   }
-  .stats{
-    padding-top:5px;
-  }
+
   .gallery-thumbs li img{
     height:50px;
   }
@@ -1930,20 +1908,12 @@ ul.main-navigation.show {
     .section-9-atmosphere {
         min-height: 650px;
     }
-
-}
-
-@media screen and (max-width: 1280px) {
-    .bsquare-box {
-        left: -300px;
-    }
-
     .secondary-project-desc h1{
       font-size:0.8em;
       margin-bottom:1px;
-      margin
+
     }
-    .secondary-project-desc h1:first-child{
+    .secondary-project-desc h1:first-of-type{
       margin-top:50px;
     }
 
@@ -1953,8 +1923,8 @@ ul.main-navigation.show {
       margin-bottom:5px;
     }
     .statnumber{
-      width:33px;
-      height:33px;
+      /*width:33px;
+      height:33px;*/
     }
     .statnumber p{
       letter-spacing:-4px;
@@ -1972,6 +1942,44 @@ ul.main-navigation.show {
     .stats{
       padding-top:5px;
     }
+  
+
+}
+
+@media screen and (max-width: 1280px) {
+    .bsquare-box {
+        left: -300px;
+    }
+
+    .secondary-project-desc h1{
+      font-size:1em;
+    }
+    .secondary-project-desc h1:first-child{
+      margin-top:50px;
+    }
+
+    .secondary-project-desc p{
+      font-size:0.7em;
+    }
+    .statnumber{
+      width:35px;
+      height:35px;
+    }
+    .statnumber p{
+      font-size:1.6em;
+
+    }
+    .stattext p{
+      font-size:0.6em;
+    }
+    .mission-partners h1{
+      margin-top:10px !important;
+    }
+    .stats{
+      padding-top:5px;
+    }
+
+
 
 
 
