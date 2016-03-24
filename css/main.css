@@ -1120,7 +1120,7 @@ section#secondary-13-mavericks{
   /*position:absolute;
   left:36.7%;*/
 
-  background-color:#4a7395;
+  background-color:#243442;
   /*background-image:url(../img/projectBackground.jpg);*/
   /*background-size:cover;*/
   /*width:66%;*/
@@ -1159,6 +1159,7 @@ section#secondary-13-mavericks{
 
 }
 .youtube-embed{
+  margin-left:50px;
   margin-top:50px;
   width:75%;
   height:60%;
