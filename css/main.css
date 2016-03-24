@@ -2382,6 +2382,22 @@ ul.main-navigation.show {
     .secondary-project-desc h1:first-of-type{
       margin-top:5px;
     }
+    @-webkit-keyframes diverBob {
+      0%, 100%   { top: 3%; }
+      50% { top: 12%; }
+    }
+    @-moz-keyframes diverBob {
+      0%, 100%   { top: 3%; }
+      50% { top: 12%; }
+    }
+    @-o-keyframes diverBob {
+      0%, 100%   { top: 3%; }
+      50% { top: 12%; }
+    }
+    @keyframes diverBob {
+      0%, 100%   { top: 3%; }
+      50% { top: 12%; }
+    }
 
 }
 
