@@ -1752,9 +1752,18 @@
                 $( ".future-animation" ).attr( "data-translatey", 20 );
             }
 
+            if ($(window).width() < 1025) {
+                $( ".future-animation" ).attr( "data-translatey", 150 );
+            }
+
             if ($(window).width() > 1800) {
                 $( ".future-animation" ).attr( "data-translatey", 400 );
             }
+
+            if ($(window).width() > 2400) {
+                $( ".future-animation" ).attr( "data-translatey", 700 );
+            }
+
         </script>
 
         <script type="text/javascript">
