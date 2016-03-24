@@ -716,15 +716,25 @@ p {
     color: #fff;
     font-weight: 400;
     font-size: 1.8em;
-    margin: 10px 0px;
+    margin: 5px 0px;
+}
+
+.team-bios h5 {
+    text-transform: uppercase;
+    color: #3481c5;
+    margin-top:0px;
 }
 
 .team-bios div {
     margin: 30px 0px 70px 0px;
 }
 
+.team-bios img {
+    width: 100%;
+}
+
 .emphasize {
-    color: cadetblue;
+    color: #3481c5;
     font-weight: 800;
 }
 
@@ -1331,6 +1341,10 @@ div.onscreen {
 
 }
 
+.breathing-space {
+    padding: 30px 0px 100px 0px;
+}
+
 .dark-bg h3 {
     margin-top: 0px;
 }
@@ -1364,7 +1378,7 @@ h1.future-where-text {
 
 .scroll-down {
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 50%;
     width: 24px;
     height: 24px;
