@@ -956,10 +956,13 @@ section#secondary-13-mavericks{
 }
 
 .pure-img{
-  max-width: 100px;
+  /*max-width: 100px;
   max-height: 100px;
   padding-right:10px;
-  padding-top:0;
+  padding-top:0;*/
+  max-width: 100%;
+height: auto;
+display: block;
 
 }
 
@@ -2088,8 +2091,20 @@ ul.main-navigation.show {
     width:50px;
     height:42px;
   }
+  .secondary-project-desc h1{
+    font-size:0.8em;
+  }
   .statnumber p{
     margin:0;
+  }
+  .project-copy p{
+    font-size: 0.7em;
+  }
+  .stattext p{
+    font-size:0.8em;
+  }
+  .statbox{
+    margin-bottom:15px;
   }
 }
 @media screen and (max-width: 1024px) {
