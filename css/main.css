@@ -535,7 +535,7 @@ div.part2 div {
 }
 
 .section-1-moon div.section-content {
-    top: 70%;
+    top: 65%;
 }
 
 .space-glass-circle {
@@ -1385,7 +1385,7 @@ h1.future-where-text {
 
 .scroll-down {
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     left: 50%;
     width: 24px;
     height: 24px;
@@ -1661,6 +1661,9 @@ font-size:1.3em;
     padding: 100px 0px;
 }
 
+.partners-heading {
+    display: inline-block;
+}
 
 div.content.part2.designers-and-engineers-container div {
     width: 80%;
@@ -1707,6 +1710,10 @@ ul.main-navigation.show {
     display: none;
 }
 
+.project-badge:hover div {
+   background-color: rgba(30,30,30,0.70);
+}
+
 @-webkit-keyframes diverBob {
   0%, 100%   { top: 5%; }
   50% { top: 8%; }
@@ -1734,7 +1741,7 @@ ul.main-navigation.show {
 }
 
 
-
+/*
 @-webkit-keyframes diverBob {
   0%, 100%   { top: 5%; }
   50% { top: 8%; }
@@ -1754,13 +1761,13 @@ ul.main-navigation.show {
 
 
 .asteroidz {
-    -webkit-animation: diverBob 6s infinite; /* Safari 4+ */
-    -moz-animation:    diverBob 6s infinite; /* Fx 5+ */
-    -o-animation:      diverBob 6s infinite; /* Opera 12+ */
-    animation:         diverBob 6s infinite; /* IE 10+, Fx 29+ */
+    -webkit-animation: diverBob 6s infinite; 
+    -moz-animation:    diverBob 6s infinite; 
+    -o-animation:      diverBob 6s infinite; 
+    animation:         diverBob 6s infinite;
 
     animation-timing-function: ease;
-}
+}*/
 
 
 
@@ -1931,6 +1938,23 @@ ul.main-navigation.show {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .partners-heading {
+        width: 100%;
+        text-align: center;
+    }
+    .text-small {
+        font-size: 1.8em;
+    }
+    .text-medium {
+        font-size: 2.7em;
+    }
+    .project-badge {
+        max-width: 400px;
+        font-size: 1.3em;
     }
 }
 
