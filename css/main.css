@@ -2069,8 +2069,14 @@ ul.main-navigation.show {
   .secondary-project-gallery{
     width:54.1667%;
   }
+  .gallery-thumbs li img{
+    width:50px;
+    height:42px;
+  }
+  .statnumber p{
+    margin:0;
+  }
 }
-
 @media screen and (max-width: 1024px) {
     .section-2-ISS {
         min-height: 550px;
