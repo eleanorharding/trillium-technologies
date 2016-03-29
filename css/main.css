@@ -784,7 +784,7 @@ div.fuelpod-badge div:nth-child(2) {
 
 div.octotalk-badge div:nth-child(2) {
 /*    background-color: #1D284B;*/
-    background-color: #2F74B1;
+    background-color: #66A1D6;
 }
 
 div.phi-badge div:nth-child(2) {
@@ -1630,18 +1630,19 @@ h1.team-title {
 .contact-us h3{
   font-family:"Ailerons";
     color: rgba(255,255,255,1);
-  font-size:2.2em;
+  font-size:2em;
   font-weight:200;
-  /*margin-top:0px;*/
-  margin-bottom:-15px;
+  margin-top:0px;
+  margin-bottom:0px;
   letter-spacing:1px;
 
 
 }
 
 .contact-us p{
-font-size:1.3em;
+font-size:1em;
 }
+
 .contact-us img{
   width:45px;
   margin:15px;
@@ -1761,9 +1762,9 @@ ul.main-navigation.show {
 
 
 .asteroidz {
-    -webkit-animation: diverBob 6s infinite; 
-    -moz-animation:    diverBob 6s infinite; 
-    -o-animation:      diverBob 6s infinite; 
+    -webkit-animation: diverBob 6s infinite;
+    -moz-animation:    diverBob 6s infinite;
+    -o-animation:      diverBob 6s infinite;
     animation:         diverBob 6s infinite;
 
     animation-timing-function: ease;
