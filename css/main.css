@@ -362,7 +362,7 @@ section.main img.sectionBG {
     padding: 50px 0px;
 }
 
-.how-we-work-content h2 {
+.how-we-work-content h2, .skillset h2 {
     color: #fff;
     font-weight: normal;
     font-size: 1.5em;
@@ -376,32 +376,32 @@ section.main img.sectionBG {
 }
 
 
-.how-we-work-content .skills {
+/*.how-we-work-content*/ .skills {
     margin: -3px;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
-.how-we-work-content .skills p {
+/*.how-we-work-content*/ .skills p {
     padding: 10px;
     margin: 15px;
 }
 
-.how-we-work-content .blue p {
+/*.how-we-work-content*/ .blue p {
     background-color: #2257af;
 }
 
-.how-we-work-content .purple p {
+/*.how-we-work-content*/ .purple p {
     background-color: #504c95;
 }
 
-.how-we-work-content .teal p {
+/*.how-we-work-content*/ .teal p {
     background-color: #17889c;
 }
 
 .skillset {
-    margin: 50px 0px;
+    margin: 50px 0px 80px 0px;
 }
 
 .skillset h2 {
@@ -847,8 +847,10 @@ div.mavericks-lab-badge div:nth-child(2) {
 }
 
 .osa-badge {
-    top: 64%;
-    right: 1%;
+    /*top: 64%;
+    right: 1%;*/
+    top: 75%;
+    right: 40%;
 }
 
 .mavericks-lab-badge {
@@ -1349,7 +1351,7 @@ div.onscreen {
 }
 
 .breathing-space {
-    padding: 30px 0px 100px 0px;
+    padding: 30px 0px 50px 0px;
 }
 
 .dark-bg h3 {
@@ -1372,7 +1374,7 @@ div.onscreen {
     font-style: italic;
     opacity: 0.7;
     /*text-transform: lowercase;*/
-    margin: 20px 0px 2px 0px;
+    margin: 0px 0px 2px 0px;
 }
 
 h1.future-where-text {
@@ -1570,7 +1572,7 @@ h1.team-title {
 }
 
 .team-title h2 {
-    margin: 0px 100px;
+    margin: 0 auto;
     color: #fff;
     padding-top: 50px;
     font-family: 'ailerons';
@@ -1738,6 +1740,23 @@ ul.main-navigation.show {
     animation:         diverBob 6s infinite; /* IE 10+, Fx 29+ */
 
     animation-timing-function: ease;
+}
+
+#space-tourists-can-enjoy {
+    top: 20%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.solid-background {
+    background-color: rgba( 30, 30, 30, 0.6);
+    color: #ccc;
+    padding: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 80%;
 }
 
 
@@ -2258,14 +2277,16 @@ ul.main-navigation.show {
         font-size: 1.3em;
     }
     .text-small {
-        margin: 10px 0px 2px 0px;
+        margin: 2px 0px 2px 0px;
     }
     div.section-content.fuelpod-ultrascope-text {
         top: 97%;
     }
     .osa-badge {
+        /*top: 55%;
+        right: 1%;*/
         top: 55%;
-        right: 1%;
+        right: 40%;
     }
     div.section-content.where-everyone-text {
         top: 40%;
@@ -2405,8 +2426,15 @@ ul.main-navigation.show {
   .secondary-project-desc{
     width:87.5%;
   }
+  .trillium-logo-main {
+        width: 150px;
+    }
+    
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
+    /*.team-title h2 {
+        margin: 0px 40px;
+    }*/
     .main-navigation {
         display: none;
     }
@@ -2594,6 +2622,9 @@ ul.main-navigation.show {
 }
 
 @media screen and (max-width: 435px) {
+    .team-bios .pure-u-1-4 {
+        width: 100%;
+    }
     .section-1-moon {
         min-height: 200px;
     }
@@ -2693,7 +2724,9 @@ ul.main-navigation.show {
         top: 70%
     }
     .osa-badge {
-        top: 65%;
+        /*top: 65%;*/
+        top: 75%;
+        /*right: 40%;*/
     }
     div.section-content.where-everyone-text {
         top: 33%;
