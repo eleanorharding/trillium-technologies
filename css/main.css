@@ -972,6 +972,7 @@ display: block;
     display:none;
   }
 .secondary-project-title{
+    -moz-box-sizing: border-box;
   /*position:absolute;*/
   /*background-image: url("../img/dropfab-title.png");
   background-repeat: no-repeat;
@@ -981,7 +982,9 @@ display: block;
   /*width:8%;*/
   height:inherit;
   background-color: #fff;
-  display:inline-block;
+  display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
   text-align: center;
   position:relative;
   /*margin:0;
@@ -1008,6 +1011,7 @@ display: block;
 
 
 .secondary-project-desc{
+  -moz-box-sizing: border-box;
   /*position:absolute;
   left:7%;*/
   background-color:#F4F7F9;
@@ -1018,6 +1022,12 @@ display: block;
   /*padding:0;*/
   position:relative;
   width:25%;
+  display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+
+}
+#secondary-2-ISS > .secondary-project-desc{
 
 }
 
@@ -1122,6 +1132,7 @@ display: block;
 }
 
 .secondary-project-gallery{
+    -moz-box-sizing: border-box;
   /*position:absolute;
   left:36.7%;*/
 
@@ -1130,7 +1141,9 @@ display: block;
   /*background-size:cover;*/
   /*width:66%;*/
   height:inherit;
-  display:inline-block;
+  display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
   /*margin-left:-50px;*/
   /*z-index:1;*/
 
@@ -1397,6 +1410,52 @@ h1.future-where-text {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
+
+}
+.scroll-down2 {
+    position: absolute;
+    bottom: -10px;
+    left: 54%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+
+}
+.scroll-down3 {
+    position: absolute;
+    bottom: -10px;
+    left: 46%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+
+}
+
+
+.backtotop{
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  text-transform: uppercase;
+  color:rgba(255,255,255,0.5);
+  font-size:0.8em;
+  letter-spacing:1px;
+
+}
+.backtotop:hover{
+  cursor: pointer;
+  color:rgba(255,255,255,1);
+
 }
 
 /*.scuba-divers {
@@ -2430,7 +2489,7 @@ ul.main-navigation.show {
   .trillium-logo-main {
         width: 150px;
     }
-    
+
 }
 @media only screen and (max-width: 601px) {
     /*.team-title h2 {

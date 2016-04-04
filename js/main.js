@@ -12,12 +12,12 @@ function setHash(event){
 
 };
 
-$('.sub-nav a').bind('click', function(event){
-  if(onProject == true){
-    storedScrollPos = $($(this).attr('href')).offset().top;
-    scrollback();
-  }
-});
+// $('.sub-nav a').bind('click', function(event){
+//   if(onProject == true){
+//     storedScrollPos = $($(this).attr('href')).offset().top;
+//     scrollback();
+//   }
+// });
 /*going to the project side */
 $('.project-link').bind('click',function(event){
 
@@ -30,12 +30,13 @@ $('.project-link').bind('click',function(event){
 
       $rightAnchor = $(this).attr('href');
 
-
+      /* Stops the anchor from jumping directly to the spot*/
+        event.preventDefault();
       /*SCROLLIN' */
+      $('html, body').animate({
+          scrollTop: $($rightAnchor).offset().top-45
+      }, 500);
 
-       $('html, body').animate({
-           scrollTop: $($rightAnchor).offset().top-45
-       }, 500);
        if ($(window).width() > 800) {
          $('html, body').animate({
              scrollLeft: $($rightAnchor).offset().left+20
@@ -50,8 +51,8 @@ $('.project-link').bind('click',function(event){
 
 
 
-       /* Stops the anchor from jumping directly to the spot*/
-         event.preventDefault();
+
+
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
       var string = $(this).attr('href');
@@ -62,7 +63,7 @@ $('.project-link').bind('click',function(event){
       //  console.log($(window).width());
 
       $(window).on('hashchange',function(){
-        if(location.hash.slice(1) == "home" || location.hash.slice(1) == ""){
+        if(location.hash.slice(1) == "home"){
 
           scrollback();
         }
@@ -108,7 +109,7 @@ $('.project-link').bind('click',function(event){
 
   });
 
-  function scrollback(){
+  function scrollback(event){
     onProject = false;
     $('html, body').animate({
         scrollLeft: 0
@@ -120,7 +121,7 @@ $('.project-link').bind('click',function(event){
 
 
 
-     event.preventDefault();
+    //  event.preventDefault();
      $rightAnchor = "home";
     //  timeout = window.setTimeout(setHash, 1000);
      $('html').css('overflowY', 'auto');
