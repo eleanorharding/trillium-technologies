@@ -7,7 +7,7 @@ var onProject = false;
 
 function setHash(event){
 
-  window.location.hash= $rightAnchor+"page";
+  window.location.hash= $rightAnchor+"-page";
     //  event.preventDefault();
 
 
@@ -123,7 +123,7 @@ $('.project-link').bind('click',function(event){
 
 
     //  event.preventDefault();
-     $rightAnchor = "home";
+      $rightAnchor = "home";
     //  timeout = window.setTimeout(setHash, 1000);
      $('html').css('overflowY', 'auto');
     //  console.log($(window).width());
@@ -281,6 +281,9 @@ function scrollToItInProject(){
   }
 };
 
+
+/*detects resize of window and forces scroll back if the user is looking at the project page,
+this should stop the weird resizing issues */
 $(window).resize(function() {
   if(onProject == true){
 
@@ -297,6 +300,26 @@ $(window).resize(function() {
  }
 
   }
+});
+
+
+/* Another go at back button,
+if the hash changes when you are in the project page, send the scroll back to the previous position */
+$(window).bind( 'hashchange', function(e) {
+  if(onProject == true){
+    if(window.location.hash == ""){
+       scrollback();
+
+    }else{
+    var string = window.location.hash;
+    var values = string.split('-');
+    $rightAnchor = values[0]+"-"+values[1]+"-"+values[2];
+    scrollToItInProject();
+  }
+
+  }
+
+
 });
 
 /*pay no attention to this... */
