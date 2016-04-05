@@ -281,6 +281,24 @@ function scrollToItInProject(){
   }
 };
 
+$(window).resize(function() {
+  if(onProject == true){
+
+    if ($(window).width() > 800) {
+      $('html, body').animate({
+          scrollLeft: $($rightAnchor).offset().left+20
+      }, 10);
+
+   $('html').css('overflowY', 'hidden');
+ } else {
+   $('html, body').animate({
+       scrollLeft: $($rightAnchor).offset().left
+   }, 10);
+ }
+
+  }
+});
+
 /*pay no attention to this... */
 
 function hashSpin(){
