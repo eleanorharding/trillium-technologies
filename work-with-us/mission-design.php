@@ -22,7 +22,7 @@
       $to = "hello@trillium.tech";
       $subject = "MISSION INITIATED";
       mail($to, $subject, $mailBody, "From: $name <$emailaddress>");
-      header("Location: http://trilliumtechnologies.net/work-with-us");
+      header("Location: http://trilliumtechnologies.net/thanks");
       exit;
   }
 ?>

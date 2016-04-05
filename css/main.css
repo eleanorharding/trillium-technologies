@@ -626,6 +626,20 @@ div.section-content.health-of-an-ecosystem-text {
 
 }
 
+.thanks-CTA {
+    padding: 15px;
+    background-color: #3481c5;
+    /*border-radius: 2px;*/
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    margin-left: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
 .margin-bubble {
     margin-top: 20px;
     display: inline-block;
@@ -1817,6 +1831,16 @@ ul.main-navigation.show {
     padding-bottom: 50px;
     text-align: center;
     width: 80%;
+}
+
+.thanks-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thanks-container h3 {
+    color: #ddd;
 }
 
 
