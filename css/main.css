@@ -762,6 +762,7 @@ p {
 .space-glass-badge {
     top: 49%;
     right: 1%;
+    z-index:100;
 }
 
 .project-badge div:nth-child(2) {
@@ -832,6 +833,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 .ultrascope-badge {
     bottom: 8%;
     right: 1%;
+    z-index:100;
 }
 
 #ultrascope {
@@ -848,6 +850,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 .fuelpod-badge {
     bottom: 1%;
     left: 1%;
+    z-index:100;
 }
 
 .octotalk-badge {
@@ -987,13 +990,6 @@ display: block;
   }
 .secondary-project-title{
     -moz-box-sizing: border-box;
-  /*position:absolute;*/
-  /*background-image: url("../img/dropfab-title.png");
-  background-repeat: no-repeat;
-  background-position: center top;*/
-
-
-  /*width:8%;*/
   height:inherit;
   background-color: #fff;
   display: -moz-inline-stack;
@@ -1001,13 +997,10 @@ display: block;
   vertical-align: top;
   text-align: center;
   position:relative;
-  /*margin:0;
-  padding:0;*/
 }
 
 .secondary-project-title img{
   margin-top:50px;
-  /*margin-left:32%;*/
   width:30%;
 
 }
@@ -1026,14 +1019,8 @@ display: block;
 
 .secondary-project-desc{
   -moz-box-sizing: border-box;
-  /*position:absolute;
-  left:7%;*/
   background-color:#F4F7F9;
   height:inherit;
-  /*width:29%;*/
-  /*display:inline-block;*/
-
-  /*padding:0;*/
   position:relative;
   width:25%;
   display: -moz-inline-stack;
@@ -1071,7 +1058,6 @@ display: block;
 .stats{
   padding-top:1px;
   margin-left:30px;
-  /*transform: translateY(50%);*/
 }
 .statbox{
   margin-bottom:10px;
@@ -1127,8 +1113,6 @@ display: block;
 
 .mission-partners{
   position:absolute;
-
-  /*text-align:center;*/
   margin-top:15px;
   width:100%;
   bottom:60px;
@@ -1147,21 +1131,11 @@ display: block;
 
 .secondary-project-gallery{
     -moz-box-sizing: border-box;
-  /*position:absolute;
-  left:36.7%;*/
-
   background-color:#243442;
-  /*background-image:url(../img/projectBackground.jpg);*/
-  /*background-size:cover;*/
-  /*width:66%;*/
   height:inherit;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: top;
-  /*margin-left:-50px;*/
-  /*z-index:1;*/
-
-  /*border:solid rgba(255,255,255,0.5) 5px;*/
   width:66.6667%;
 }
 
@@ -1245,9 +1219,6 @@ position:relative;
   color:#3481c5;
 }
 
-.gallery-1{
-
-}
 
 .gallery-2{
   display: none;
@@ -1278,6 +1249,9 @@ position:relative;
 
   height:70px;
   z-index:100;
+}
+.gallery-thumbs li img:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
 
 .overlay {

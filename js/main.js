@@ -255,7 +255,7 @@ $(document).keydown(function(e) {
           } else if($rightAnchor == "#secondary-3-BSQ"){
             $rightAnchor = "#secondary-5-dropfab";
             scrollToItInProject();
-          }
+          } else
         break;
 
         default: return; // exit this handler for other keys
