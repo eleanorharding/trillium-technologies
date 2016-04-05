@@ -6,8 +6,9 @@ var $rightAnchor;
 var onProject = false;
 
 function setHash(event){
+
+  window.location.hash= $rightAnchor+"page";
     //  event.preventDefault();
-  window.location.hash= $rightAnchor+" ";
 
 
 };
@@ -55,9 +56,9 @@ $('.project-link').bind('click',function(event){
 
 
       /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
-      var string = $(this).attr('href');
-      var value = string.split('-');
-        $rightAnchor = value[1]+value[2];
+      // var string = $(this).attr('href');
+      // var value = string.split('-');
+      //   $rightAnchor = value[1]+value[2];
        timeout = window.setTimeout(setHash, 1000);
 
       //  console.log($(window).width());
@@ -92,7 +93,7 @@ $('.project-link').bind('click',function(event){
           event.preventDefault();
 
        /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
-       //  timeout = window.setTimeout(setHash, 1000);
+        timeout = window.setTimeout(setHash, 1000);
        if ($(window).width() > 800) {
         $('html').css('overflowY', 'hidden');
 
@@ -131,7 +132,12 @@ $('.project-link').bind('click',function(event){
          $('.secondary').toggleClass('hidden');
      }, 1000);
    }
-  }
+ };
+
+ $(".backtotop").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
 
   /*Color picker for the stats */
@@ -185,7 +191,95 @@ $( document ).ready(function() {
 
 });
 
+/* Arrow keys nav inside projects, very crappy code */
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        scrollback();
+        break;
 
+        case 38: // up
+          if ($rightAnchor == "#secondary-13-mavericks" ){
+            $rightAnchor = "#secondary-12-osa";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-12-osa"){
+            $rightAnchor = "#secondary-11-phi";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-11-phi"){
+            $rightAnchor = "#secondary-9-octotalk";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-9-octotalk"){
+            $rightAnchor = "#secondary-7-fuelpod";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-7-fuelpod"){
+            $rightAnchor = "#secondary-6-ultrascope";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-6-ultrascope"){
+            $rightAnchor = "#secondary-5-dropfab";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-5-dropfab"){
+            $rightAnchor = "#secondary-3-BSQ";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-3-BSQ"){
+            $rightAnchor = "#secondary-2-ISS";
+            scrollToItInProject();
+          }
+
+        break;
+
+        case 39: // right
+        break;
+
+        case 40: // down
+          if ($rightAnchor == "#secondary-2-ISS" ){
+            $rightAnchor = "#secondary-3-BSQ";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-12-osa"){
+            $rightAnchor = "#secondary-13-mavericks";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-11-phi"){
+            $rightAnchor = "#secondary-12-osa";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-9-octotalk"){
+            $rightAnchor = "#secondary-11-phi";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-7-fuelpod"){
+            $rightAnchor = "#secondary-9-octotalk";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-6-ultrascope"){
+            $rightAnchor = "#secondary-7-fuelpod";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-5-dropfab"){
+            $rightAnchor = "#secondary-6-ultrascope";
+            scrollToItInProject();
+          } else if($rightAnchor == "#secondary-3-BSQ"){
+            $rightAnchor = "#secondary-5-dropfab";
+            scrollToItInProject();
+          }
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+function scrollToItInProject(){
+  storedScrollPos = $(window).scrollTop();
+  $('html, body').animate({
+      scrollTop: $($rightAnchor).offset().top-45
+  }, 500);
+
+
+  /* Stops the anchor from jumping directly to the spot*/
+    event.preventDefault();
+
+ /*sets the hash of the url to the anchor name after 1 sec, avoiding the jump */
+  timeout = window.setTimeout(setHash, 1000);
+  if ($(window).width() > 800) {
+    $('html').css('overflowY', 'hidden');
+
+  }
+};
 
 /*pay no attention to this... */
 

@@ -983,8 +983,8 @@ display: block;
   height:inherit;
   background-color: #fff;
   display: -moz-inline-stack;
-        display: inline-block;
-        vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
   text-align: center;
   position:relative;
   /*margin:0;
@@ -1023,8 +1023,8 @@ display: block;
   position:relative;
   width:25%;
   display: -moz-inline-stack;
-        display: inline-block;
-        vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 
 }
 #secondary-2-ISS > .secondary-project-desc{
@@ -1142,8 +1142,8 @@ display: block;
   /*width:66%;*/
   height:inherit;
   display: -moz-inline-stack;
-        display: inline-block;
-        vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
   /*margin-left:-50px;*/
   /*z-index:1;*/
 
