@@ -189,6 +189,10 @@ h1 {
     font-weight: normal;
 }
 
+.fadeInUp h1 {
+
+}
+
 h1.story {
     text-shadow: 1px 1px 1px rgba(60, 60, 60, 0.4);
 }
@@ -582,7 +586,7 @@ div.part2 div {
 }
 
 div.section-content.fuelpod-ultrascope-text {
-    top: 90%;
+    top: 77%;
 }
 
 div.section-content.health-of-an-ecosystem-text {
@@ -831,7 +835,7 @@ div.mavericks-lab-badge div:nth-child(2) {
 }
 
 .ultrascope-badge {
-    bottom: 8%;
+    bottom: 13%;
     right: 1%;
     z-index:100;
 }
@@ -900,6 +904,10 @@ div.mavericks-lab-badge div:nth-child(2) {
     background-color:#111;
 
 
+}
+
+.skillset .pure-u-1-6 {
+    min-width: 200px;
 }
 
 section.secondary {
@@ -2799,7 +2807,6 @@ ul.main-navigation.show {
     .mavericks-lab-badge {
         top: 80%;
     }
-
     .pure-u-1-6.trillium-footer-missions, .pure-u-1-6.trillium-footer-about {
         width:50%;
     }
@@ -2826,18 +2833,33 @@ ul.main-navigation.show {
     .project-badge div {
         margin: 3px;
     }
-
     .trillium-logo-main {
         width: 45%;
     }
-
-
-
+    .skillset .pure-u-1-6 {
+        min-width: 170px;
+    }
+    .team-bios .pure-u-3-4 {
+        width: 100%;
+    }
+    .team-bios div {
+        margin: 10px;
+    }
 }
 
 
 @media screen and (max-width: 375px) {
-
+    .breathing-space {
+        padding: 0px;
+    }
+    .team-title h2 {
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 1.2em;
+    }
+    div.pure-u-1-6 {
+        width: 100%;
+    }
     .bsquare-box {
         left: -1000px;
     }
@@ -2880,7 +2902,6 @@ ul.main-navigation.show {
     .asteroid {
         width: 116px;
     }
-
 }
 
 @media screen and (max-width: 320px) {
