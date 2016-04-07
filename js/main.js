@@ -285,6 +285,9 @@ function scrollToItInProject(){
 /*detects resize of window and forces scroll back if the user is looking at the project page,
 this should stop the weird resizing issues */
 $(window).resize(function() {
+
+  $('header').css('width', $(window).width())
+
   if(onProject == true){
 
     if ($(window).width() > 800) {
