@@ -379,6 +379,11 @@ section.main img.sectionBG {
     font-weight: normal;
 }
 
+.grand-challenges-img {
+    width: 80%;
+    max-width: 600px;
+}
+
 
 /*.how-we-work-content*/ .skills {
     margin: -3px;
@@ -1230,6 +1235,8 @@ position:relative;
 }
 .project-copy a{
   color:#3481c5;
+  letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 
