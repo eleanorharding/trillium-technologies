@@ -413,8 +413,13 @@ section.main img.sectionBG {
     font-family: 'ailerons';
 }
 
-form.mission-form{
-    color: #fff;
+
+form.mission-form {
+    margin: 100px 0px
+}
+
+form.mission-form *{
+    color: #fff; 
     font-size: 1.2em;
 }
 
